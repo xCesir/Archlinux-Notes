@@ -13,3 +13,8 @@ archinstall --script guided
 ````
 /etc/gdm/custom.conf 
 ````
+
+## Falsche Keymop in LUKS
+````
+sudo mkinitcpio -P
+````
