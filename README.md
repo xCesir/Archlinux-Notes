@@ -79,3 +79,11 @@ This is very important to save. If the header is damaged all data is lost withou
 If you need more help you can type ````man cryptsetup````.
 
 
+## Laptop Bluetooth not working
+
+Es ist häufig der Fall, dass der Service nicht aktiviert ist
+
+````
+systemctl enable bluetooth
+systemctl start bluetooth
+````
