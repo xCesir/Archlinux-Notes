@@ -92,3 +92,8 @@ systemctl start bluetooth
 ````
 sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
 ````
+
+## firejail firefox
+````
+firejail --private --dns=1.1.1.1 --dns=9.9.9.9 firefox -no-remote
+````
