@@ -26,6 +26,10 @@ sudo mkinitcpio -P
 
 [Programme](./Programme.md)
 
+## Commands
+
+[Commands](./Commands.md)
+
 ## Laptop Bluetooth not working
 
 Es ist häufig der Fall, dass der Service nicht aktiviert ist
