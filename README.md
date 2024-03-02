@@ -1,7 +1,7 @@
 # Arch-Linux
  My arch linux installation
 
- Beispiellink[/Programme.md]
+ Beispiellink[./Programme.md]
 
 ## create usb
 
