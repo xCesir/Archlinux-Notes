@@ -18,6 +18,7 @@ archinstall --script guided
 ````
 sudo mkinitcpio -P
 ````
+
 ## LUKS
 
 [Luks](./Luks.md)
@@ -37,11 +38,6 @@ Es ist häufig der Fall, dass der Service nicht aktiviert ist
 ````
 systemctl enable bluetooth
 systemctl start bluetooth
-````
-
-## fonts
-````
-sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
 ````
 
 ## firejail firefox
