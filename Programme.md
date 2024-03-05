@@ -7,5 +7,8 @@ Gegen Tracking
 [Quelle der Empfehlung](https://youtu.be/GkxAp2Gh7-E?si=seFlGxY91MBgu9ht&t=31) <br>
 [AUR](https://aur.archlinux.org/packages/portmaster-stub-bin)
 
-ää Logseq
+## Logseq
 [Website des Hersteller](https://logseq.com/)
+
+## fastfetch
+wie Neofetch aber mit mehr Informationen
