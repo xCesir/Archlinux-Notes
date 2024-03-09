@@ -31,6 +31,10 @@ sudo mkinitcpio -P
 
 [Commands](./Commands.md)
 
+## VFIO
+
+[VFIO](./VFIO.md)
+
 ## Laptop Bluetooth not working
 
 Es ist häufig der Fall, dass der Service nicht aktiviert ist
