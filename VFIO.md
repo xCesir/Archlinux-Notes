@@ -55,4 +55,4 @@ https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#X_does_not_start_after
 #### If it does, make a backup sudo cp /etc/X11/xorg.conf /etc/X11/xorg.conf.bak
   Uncomment Nvidia-GPU related Decive section in the xorg.conf.
 #### Reboot
-### If the computer doesn't want to boot anymore, go into recovery mode and either delete /etc/X11/xorg.conf or roll out the backup.
+#### If the computer doesn't want to boot anymore, go into recovery mode and either delete /etc/X11/xorg.conf or roll out the backup.
