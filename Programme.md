@@ -18,3 +18,7 @@ https://flathub.org/apps/com.mattjakeman.ExtensionManager
 
 ## GDM-Settings
 https://aur.archlinux.org/packages/gdm-settings
+
+## FIrewall UFW
+
+https://wiki.archlinux.org/title/Uncomplicated_Firewall
