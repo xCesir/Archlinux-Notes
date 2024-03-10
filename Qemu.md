@@ -73,6 +73,3 @@ Name                 State      Autostart
 ````
 open virt-manager > Edit > Connection Details > '+' > name: 'default'
 ````
-sudo virsh net-autostart --network default
-virsh net-start default
-````
