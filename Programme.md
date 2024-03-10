@@ -22,3 +22,10 @@ https://aur.archlinux.org/packages/gdm-settings
 ## FIrewall UFW
 
 https://wiki.archlinux.org/title/Uncomplicated_Firewall
+
+````
+sudo pacman -S ufw ufw-extras gufw
+sudo systemctl enable ufw
+sudo systemctl start ufw
+sudo ufw enable
+````
