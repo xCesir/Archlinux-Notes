@@ -28,11 +28,12 @@ pacman -Rs package_name
 ````
 ## AUR und yay
 
-Das ArchLinux User-Community Repository (AUR) ist eine Sammlung von Paketbau-Anleitungen (den PKGBUILDs) anhand derer Programmpakete für Arch Linux erstellt werden können.
-Jeder kann dort seine Pakete nach einer Registrierung veröffentlichen und anderen zur Verfügung stellen. Dort sind alle "inoffiziellen" Packete zu finden.
-Diese sollte man vor installation auf Malware überprüfen. Manchmal wird das AUR auch von den Entwicklern einer Software zur einfachen Veröffentlichung genutzt (siehe Portmaster).
-
-Um den User das installieren von AUR-Paketen zu vereinfachen gibt es Helper, der beliebteste ist yay. Yay hat die größte Integration von [featuren](https://wiki.archlinux.de/title/AUR_Hilfsprogramme#Aktive_Projekte).
+Das ArchLinux User-Community Repository (AUR) ist eine Sammlung von Paketbau-Anleitungen (den PKGBUILDs) anhand derer Programmpakete für Arch Linux erstellt werden können.<br>
+Jeder kann dort seine Pakete nach einer Registrierung veröffentlichen und anderen zur Verfügung stellen. Dort sind alle "inoffiziellen" Packete zu finden.<br>
+Diese sollte man vor installation auf Malware überprüfen. Manchmal wird das AUR auch von den Entwicklern einer Software zur einfachen Veröffentlichung genutzt (siehe Portmaster).<br>
+<br>
+Um den User das installieren von AUR-Paketen zu vereinfachen gibt es Helper, der beliebteste ist yay. <br>
+Yay hat hierbei die größte Integration von [featuren](https://wiki.archlinux.de/title/AUR_Hilfsprogramme#Aktive_Projekte).<br>
 
 ### yay installieren
 
