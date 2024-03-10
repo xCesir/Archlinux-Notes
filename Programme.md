@@ -12,3 +12,9 @@ Gegen Tracking
 
 ## fastfetch
 wie Neofetch aber mit mehr Informationen
+
+## Gnome Extension Manager
+https://flathub.org/apps/com.mattjakeman.ExtensionManager
+
+## GDM-Settings
+https://aur.archlinux.org/packages/gdm-settings
