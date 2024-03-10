@@ -1,4 +1,4 @@
-#Basic Commands
+# Basic Commands
 
 ## Paket-Manager [Pacman](https://wiki.archlinux.org/title/pacman)
 
