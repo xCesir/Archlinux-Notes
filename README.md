@@ -27,6 +27,10 @@ archinstall --script guided
 
 [Commands](./Commands.md)
 
+## troubleshooting
+
+[troubleshooting](./troubleshooting.md)
+
 ## VFIO
 
 [VFIO](./VFIO.md)
@@ -34,12 +38,3 @@ archinstall --script guided
 ## Qemu
 
 [Qemu](./Qemu.md)
-
-## Laptop Bluetooth not working
-
-Es ist häufig der Fall, dass der Service nicht aktiviert ist
-
-````
-systemctl enable bluetooth
-systemctl start bluetooth
-````
