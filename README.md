@@ -1,13 +1,13 @@
 # Arch-Linux
- My arch linux installation
-
-## create usb
 
 ## run guided install
 
 ````
-archinstall --script guided
+archinstall
 ````
+ Archlinux installation Requirements, dass dieses Repo anwendbar ist:
+ installation per `archinstall`
+ UKI
 
 ## Wayland (disable)
 
