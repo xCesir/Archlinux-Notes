@@ -29,3 +29,17 @@ sudo systemctl enable ufw
 sudo systemctl start ufw
 sudo ufw enable
 ````
+
+## firejail
+
+### setup
+
+````
+sudo pacman -S firejail firetools
+````
+
+### firefox example
+
+````
+firejail --private --dns=1.1.1.1 --dns=9.9.9.9 firefox -no-remote
+````
