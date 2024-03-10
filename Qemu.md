@@ -99,3 +99,12 @@ virsh net-define /usr/share/libvirt/networks/default.xml
 virsh net-autostart default
 virsh net-start default
 ````
+
+### fehler:
+internal error: Network is already in use by interface virbr0
+
+````
+sudo ifconfig virbr0 down
+sudo brctl delbr virbr0
+sudo virsh net-start default
+````
