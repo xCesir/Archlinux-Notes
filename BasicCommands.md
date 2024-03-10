@@ -61,6 +61,9 @@ yay -Syu
 ````
 
 #### Installieren
+Im Rahmen der Installation kommt es zu zwei Abfragen beide können mit `n` abgeleht werden
+- Die erste bezieht sich darauf, ob vom Source Code die Binary gebaut werden soll.
+- Die zweite, ob ein Änderungsverlauf des Source Code Ausgeben werden soll.
 
 ````
 yay -S package_name1 package_name2 ...
