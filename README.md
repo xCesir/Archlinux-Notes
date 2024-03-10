@@ -6,8 +6,8 @@
 archinstall
 ````
  Archlinux installation Requirements, dass dieses Repo anwendbar ist:<br>
- installation per `archinstall`<br>
- UKI<br>
+ -installation per `archinstall`<br>
+ -UKI<br>
 
 ## Wayland (disable)
 
