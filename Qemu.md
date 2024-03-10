@@ -46,3 +46,56 @@ sudo modprobe kvm_amd nested=1
 ````
 echo "options kvm-amd nested=1" | sudo tee /etc/modprobe.d/kvm-amd.conf
 ````
+
+## virtual networks
+````
+virsh net-list --all
+````
+### if default existst:
+
+````
+Name                 State      Autostart
+-----------------------------------------
+default              active     yes
+````
+
+````
+virsh net-autostart default
+virsh net-start default
+````
+
+### if default does not existst:
+
+````
+Name                 State      Autostart
+-----------------------------------------
+
+````
+
+create default.xml:
+````
+sudo mkdir /usr/share/libvirt/networks/
+sudo nano /usr/share/libvirt/networks/default.xml
+````
+
+````xml
+<network>
+  <name>default</name>
+  <uuid>9a05da11-e96b-47f3-8253-a3a482e445f5</uuid>
+  <forward mode='nat'/>
+  <bridge name='virbr0' stp='on' delay='0'/>
+  <mac address='52:54:00:0a:cd:21'/>
+  <ip address='192.168.122.1' netmask='255.255.255.0'>
+    <dhcp>
+      <range start='192.168.122.2' end='192.168.122.254'/>
+    </dhcp>
+  </ip>
+</network>
+````
+````
+virsh net-define /usr/share/libvirt/networks/default.xml
+````
+````
+virsh net-autostart default
+virsh net-start default
+````
