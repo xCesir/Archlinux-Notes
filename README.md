@@ -14,6 +14,9 @@ archinstall --script guided
 ````
 /etc/gdm/custom.conf 
 ````
+## Basic
+
+[Basic Commands](BasicCommands.md)
 
 ## LUKS
 
