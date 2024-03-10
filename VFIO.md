@@ -40,3 +40,6 @@ vfio-pci.ids=8086:56a5,8086:4f92
 
 ## X is not working
 https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#X_does_not_start_after_enabling_vfio_pci
+
+## Reconfigure Xorg (maybe working?)
+https://askubuntu.com/questions/1317929/force-xorg-to-use-amd-gpu-over-nvidia-gpu/1438355#1438355
