@@ -43,3 +43,9 @@ sudo pacman -S firejail firetools
 ````
 firejail --private --dns=1.1.1.1 --dns=9.9.9.9 firefox -no-remote
 ````
+
+## image [thumbnails](https://wiki.archlinux.org/title/File_manager_functionality#Thumbnail_previews)
+
+````
+sudo pacman -S tumbler
+````
