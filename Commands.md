@@ -1,7 +1,7 @@
 # Command
 
 ## Watch / Reload Terminal
-run continously in terminal
+watch lässt einen Command in einem geben Zeitinterval '-n Sekunden' immer wieder Ausgaben, in diesem Fall den Befehl 'sensors'
 ````bash
 watch -n 2 sensors
 ````
