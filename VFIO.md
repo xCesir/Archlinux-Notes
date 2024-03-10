@@ -42,4 +42,17 @@ vfio-pci.ids=8086:56a5,8086:4f92
 https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#X_does_not_start_after_enabling_vfio_pci
 
 ## Reconfigure Xorg (maybe working?)
-https://askubuntu.com/questions/1317929/force-xorg-to-use-amd-gpu-over-nvidia-gpu/1438355#1438355
+
+[Reddit](https://askubuntu.com/questions/1317929/force-xorg-to-use-amd-gpu-over-nvidia-gpu/1438355#1438355)
+
+### Check if /etc/X11/xorg.conf already exists
+
+#### If not, create it via Xorg -Configure (requires no active X session):
+  Drop to TTY session (e.g. ctrl+alt+F3)
+  Stop gnome desktop manager service gdm stop
+  Xorg -configure
+  sudo cp /home/$USER/xorg.conf.new /etc/X11/xorg.conf
+#### If it does, make a backup sudo cp /etc/X11/xorg.conf /etc/X11/xorg.conf.bak
+  Uncomment Nvidia-GPU related Decive section in the xorg.conf.
+#### Reboot
+### If the computer doesn't want to boot anymore, go into recovery mode and either delete /etc/X11/xorg.conf or roll out the backup.
