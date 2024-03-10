@@ -54,18 +54,26 @@ rm -r yay/
 
 yay funktioniert analog zu Pacman, sollte aber nie mit `sudo` ausgeführt werden
 
+#### Updaten
+
+````
+yay -Syu
+````
+
+#### Installieren
+
 ````
 yay -S package_name1 package_name2 ...
 ````
 
-## Entfernen
+#### Entfernen
 
-### Entfernt Packet
+##### Entfernt Packet
 ````
 yay -R package_name
 ````
 
-### Entfernt Packet und nicht mehr benötigte Dependencies
+##### Entfernt Packet und nicht mehr benötigte Dependencies
 
 ````
 yay -Rs package_name
