@@ -22,6 +22,7 @@ sudo systemctl start libvirtd.service
 ````
 /etc/libvirt/libvirtd.conf
 ````
+uncomment:
 ````
 #unix_sock_group = "libvirt"
 #unix_sock_ro_perms = "0777"  # set to 0770 to deny non-group libvirt users
