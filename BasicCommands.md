@@ -33,3 +33,40 @@ Jeder kann dort seine Pakete nach einer Registrierung veröffentlichen und ander
 Diese sollte man vor installation auf Malware überprüfen. Manchmal wird das AUR auch von den Entwicklern einer Software zur einfachen Veröffentlichung (siehe Portmaster).
 
 Um den User das installieren von AUR-Paketen zu vereinfachen gibt es Helper, der beliebteste ist yay. Yay hat die größte Integration von [featuren](https://wiki.archlinux.de/title/AUR_Hilfsprogramme#Aktive_Projekte).
+
+### yay installieren
+
+````
+sudo pacman -S --needed base-devel git
+git clone https://aur.archlinux.org/yay.git
+sudo chown -R $(whoami) yay/
+cd yay
+makepkg -si
+yay --version
+````
+Folder löschen, da nich länger benötigt
+````
+cd ..
+rm -r yay/
+````
+
+### yay
+
+yay funktioniert analog zu Pacman, sollte aber nie mit `sudo` ausgeführt werden
+
+````
+yay -S package_name1 package_name2 ...
+````
+
+## Entfernen
+
+### Entfernt Packet
+````
+yay -R package_name
+````
+
+### Entfernt Packet und nicht mehr benötigte Dependencies
+
+````
+yay -Rs package_name
+````
