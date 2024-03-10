@@ -20,7 +20,7 @@ sudo systemctl start libvirtd.service
 ## config
 
 ````
-/etc/libvirt/libvirtd.conf
+sudo nano /etc/libvirt/libvirtd.conf
 ````
 uncomment:
 ````
@@ -30,6 +30,8 @@ uncomment:
 #auth_unix_ro = "none"
 #auth_unix_rw = "none"
 ````
+save and exit
+
 ````
 sudo usermod -a -G libvirt $(whoami)
 newgrp libvirt
