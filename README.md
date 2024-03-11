@@ -41,3 +41,9 @@ archinstall
 ## Qemu
 
 [Qemu](./Qemu.md)
+
+## Yubikey
+
+## Yubikey Disk Encryption
+
+[Yubikey Disk Encryption](YubikeyDiskEncryption.md)
