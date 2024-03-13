@@ -49,3 +49,9 @@ firejail --private --dns=1.1.1.1 --dns=9.9.9.9 firefox -no-remote
 ````
 sudo pacman -S tumbler
 ````
+
+## LaTeX
+
+````
+sudo pacman -S gnome-latex texlive-binextra texlive-langgerman dblatex
+````
