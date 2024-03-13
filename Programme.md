@@ -55,3 +55,6 @@ sudo pacman -S tumbler
 ````
 sudo pacman -S gnome-latex texlive-binextra texlive-langgerman dblatex
 ````
+
+## Update Device Firmware
+[Archwiki](https://wiki.archlinux.org/title/Fwupd#Usage)
