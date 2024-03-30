@@ -46,6 +46,9 @@ archinstall
 
 [Yubikey](./Yubikey.md)
 
+## Oh-my-zsh
+[oh my zsh](https://github.com/ohmyzsh/ohmyzsh/wiki)
+
 ## Yubikey Disk Encryption
 
 [Quelle](https://github.com/agherzan/yubikey-full-disk-encryption)<br>
