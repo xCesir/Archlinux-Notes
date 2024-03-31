@@ -58,3 +58,11 @@ sudo pacman -S gnome-latex texlive-binextra texlive-langgerman dblatex
 
 ## Update Device Firmware
 [Archwiki](https://wiki.archlinux.org/title/Fwupd#Usage)
+
+## GNUPG
+````
+sudo pacman -Ss gnupg kleopatra
+````
+````
+echo "pinentry-program /usr/bin/pinentry-gtk-2" > ~/.gnupg/gpg-agent.conf 
+````
