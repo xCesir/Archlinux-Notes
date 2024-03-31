@@ -37,7 +37,10 @@ lspci -nnk
 ````
 vfio-pci.ids=8086:56a5,8086:4f92
 ````
-
+### load
+````
+sudo mkinitcpio -P
+````
 ## X is not working
 https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#X_does_not_start_after_enabling_vfio_pci
 
