@@ -42,6 +42,9 @@ archinstall
 
 [Qemu](./Qemu.md)
 
+## Virt-Manager
+[Virt-Manager](./virt-manager.md)
+
 ## Yubikey
 
 [Yubikey](./Yubikey.md)
