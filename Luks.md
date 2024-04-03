@@ -1,3 +1,7 @@
+## create random
+````shell
+dd bs=512 count=4 if=/dev/random of="./HDDkeyfile" iflag=fullblock
+````
 [Reddit Post](https://askubuntu.com/questions/1319688/luks-how-can-i-add-more-password-slots-or-remove-change-a-password)
 
 I assume that the partition is ````/dev/sda3````
