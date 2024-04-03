@@ -1,6 +1,6 @@
 ## create random
 ````shell
-dd bs=512 count=4 if=/dev/random of="./HDDkeyfile" iflag=fullblock
+dd bs=512 count=4 if=/dev/random of="./mykeyfile" iflag=fullblock
 ````
 [Reddit Post](https://askubuntu.com/questions/1319688/luks-how-can-i-add-more-password-slots-or-remove-change-a-password)
 
