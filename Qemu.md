@@ -6,7 +6,7 @@
 ## install
 
 ````bash
-sudo pacman -S qemu-full virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat dmidecode swtpm libguestfs
+sudo pacman -S qemu-full virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat dmidecode swtpm libguestfs spice-vdagent
 ````
 
 ````
