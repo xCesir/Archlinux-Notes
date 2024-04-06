@@ -66,3 +66,6 @@ sudo pacman -Ss gnupg kleopatra
 ````
 echo "pinentry-program /usr/bin/pinentry-gnome3" > ~/.gnupg/gpg-agent.conf 
 ````
+````
+gpg-connect-agent reloadagent /bye
+````
