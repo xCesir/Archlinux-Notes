@@ -64,5 +64,5 @@ sudo pacman -S gnome-latex texlive-binextra texlive-langgerman dblatex
 sudo pacman -Ss gnupg kleopatra
 ````
 ````
-echo "pinentry-program /usr/bin/pinentry-gtk-2" > ~/.gnupg/gpg-agent.conf 
+echo "pinentry-program /usr/bin/pinentry-gnome3" > ~/.gnupg/gpg-agent.conf 
 ````
