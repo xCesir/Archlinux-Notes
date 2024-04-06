@@ -50,7 +50,7 @@ archinstall
 [Yubikey](./Yubikey.md)
 
 ## Oh-my-zsh
-[oh my zsh_link](https://github.com/ohmyzsh/ohmyzsh/wiki)
+[oh my zsh_link](https://github.com/ohmyzsh/ohmyzsh/wiki)<br>
 [oh my zsh](./ohmyzsh.md)
 
 ## Yubikey Disk Encryption
