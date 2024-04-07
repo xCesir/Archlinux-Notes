@@ -51,3 +51,6 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git
 echo "source ${(q-)PWD}/powerlevel10k/powerlevel10k.zsh-theme" >> ${ZDOTDIR:-$HOME}/.zshrc
 exit
 ```
+```
+sudo pacman -S nerd-fonts adobe-source-code-pro-fonts ttf-font-awesome powerline-fonts
+```
