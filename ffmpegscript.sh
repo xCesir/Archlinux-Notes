@@ -12,4 +12,5 @@ do
   # ffmpeg -hwaccel vaapi -hwaccel_device /dev/dri/renderD128 -hwaccel_output_format vaapi -i "$f" -c:v av1_vaapi -b:v 1M -maxrate 2M "$path${b%.*}_av1.mkv"
   #ffmpeg -hwaccel qsv -qsv_device /dev/dri/renderD128 -c:v av1_qsv -i input.mp4 -c:v av1_qsv output.mp4
   ffmpeg -hwaccel vaapi -hwaccel_device /dev/dri/renderD128 -hwaccel_output_format vaapi -i "$f" -c:v av1_vaapi "$path${b%.*}_av1.mkv"
+  ffmpeg -hwaccel vaapi -hwaccel_device /dev/dri/renderD128 -hwaccel_output_format vaapi -i "$f" -c:v av1_vaapi -minrate 3M -b:v 5M -maxrate 7M "$path${b%.*}_av1.mkv"
 done
