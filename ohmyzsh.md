@@ -54,3 +54,17 @@ exit
 ```
 sudo pacman -S nerd-fonts adobe-source-code-pro-fonts ttf-font-awesome powerline-fonts ttf-meslo-nerd 
 ```
+## Update (all)
+```
+omz update
+cd ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/
+git pull
+cd ~/.oh-my-zsh/custom/plugins/zsh-completions/
+git pull
+cd ~/.oh-my-zsh/custom/plugins/zsh-history-substring-search/
+git pull
+cd ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
+git pull
+cd ~/.oh-my-zsh/custom/themes/powerlevel10k/
+git pull
+```
