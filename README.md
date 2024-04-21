@@ -26,6 +26,10 @@ archinstall
 
 [Programme](./Programme.md)
 
+## Flathub
+
+[Flathub](./Flathub.md)
+
 ## Commands
 
 [Commands](./Commands.md)
