@@ -2,11 +2,21 @@
 ```
 sudo pacman -S zsh zsh-doc
 ```
-## [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/wiki)
+## Arch
+
+### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+```
+cd ~/.oh-my-zsh/custom/plugins/
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+echo "source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+```
+
+## Manual
+### [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/wiki)
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-## [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
+### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
 ```
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 nano ~/.zshrc
@@ -17,7 +27,7 @@ plugins=(
     zsh-autosuggestions
 )
 
-## [zsh-completions](https://github.com/zsh-users/zsh-completions)
+### [zsh-completions](https://github.com/zsh-users/zsh-completions)
 ```
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
 nano ~/.zshrc
@@ -28,7 +38,7 @@ fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 ```
 Falls es nicht funktiniert ist einb Issue im Git verlinkt
 
-## [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
+### [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
 ``` 
 git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
 nano ~/.zshrc
@@ -38,13 +48,13 @@ plugins=( [plugins...] zsh-history-substring-search)
 ```
 exec zsh
 ```
-## [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 ```
 cd ~/.oh-my-zsh/custom/plugins/
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 ```
-## [powerlevel10k - theme](https://github.com/romkatv/powerlevel10k)
+### [powerlevel10k - theme](https://github.com/romkatv/powerlevel10k)
 ```
 cd ~/.oh-my-zsh/custom/themes/
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git
@@ -54,7 +64,7 @@ exit
 ```
 sudo pacman -S nerd-fonts adobe-source-code-pro-fonts ttf-font-awesome powerline-fonts ttf-meslo-nerd 
 ```
-## Update (all)
+### Update (all)
 ```
 omz update
 cd ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/
