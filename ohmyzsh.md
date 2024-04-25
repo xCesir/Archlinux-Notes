@@ -4,10 +4,15 @@ sudo pacman -S zsh zsh-doc
 ```
 ## Arch
 
+### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
+```
+sudo pacman -S zsh-autosuggestions
+echo "source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+```
+
 ### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 ```
-cd ~/.oh-my-zsh/custom/plugins/
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+sudo pacman -S zsh-syntax-highlighting
 echo "source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 ```
 
