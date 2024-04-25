@@ -20,6 +20,12 @@ fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 ```
 Falls es nicht funktiniert ist einb Issue im Git verlinkt
 
+### [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
+``` 
+sudo pacman -S zsh-history-substring-search
+echo "source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+```
+
 ### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 ```
 sudo pacman -S zsh-syntax-highlighting
