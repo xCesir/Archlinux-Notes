@@ -18,7 +18,7 @@ echo "source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 ```
 sudo pacman -S zsh-completions
 ```
-nach `source "$ZSH/oh-my-zsh.sh"` suche und davor einfügen:
+nach `source $ZSH/oh-my-zsh.sh` suche und in die Zeile *davor* einfügen:
 ```
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 ```
@@ -127,6 +127,7 @@ popd
 pushd ~/.oh-my-zsh/custom/themes/powerlevel10k/
 git pull
 popd
+exec zsh
 ```
 
 ## fastfetch
