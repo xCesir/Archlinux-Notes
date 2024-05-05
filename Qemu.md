@@ -2,6 +2,8 @@
 
 ## links
 [Extern](https://computingforgeeks.com/install-kvm-qemu-virt-manager-arch-manjar/)
+[Reddit Nested](https://www.reddit.com/r/archlinux/comments/j4j2ah/amd_nested_virtualization_in_linux/?rdt=57770)
+[Nested](https://ostechnix.com/how-to-enable-nested-virtualization-in-kvm-in-linux/)
 
 ## install
 
