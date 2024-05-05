@@ -111,7 +111,10 @@ sudo pacman -S nerd-fonts adobe-source-code-pro-fonts ttf-font-awesome powerline
 ```
 #### [Recommended Font](https://github.com/romkatv/powerlevel10k/blob/master/font.md)
 ```
-Meslo Nerd Font 
+yay -S ttf-meslo-nerd-font-powerlevel10k 
+```
+```
+MesloLGS NF Regular
 ```
 
 ### Update (all)
