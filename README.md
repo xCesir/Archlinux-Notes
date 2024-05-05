@@ -14,6 +14,10 @@ archinstall
 ````
 /etc/gdm/custom.conf 
 ````
+## Oh-my-zsh
+[oh my zsh_link](https://github.com/ohmyzsh/ohmyzsh/wiki)<br>
+[oh my zsh](./ohmyzsh.md)
+
 ## Basic
 
 [Basic Commands](BasicCommands.md)
@@ -52,10 +56,6 @@ archinstall
 ## Yubikey
 
 [Yubikey](./Yubikey.md)
-
-## Oh-my-zsh
-[oh my zsh_link](https://github.com/ohmyzsh/ohmyzsh/wiki)<br>
-[oh my zsh](./ohmyzsh.md)
 
 ## KDE
 [KDE](./KDE.md)
