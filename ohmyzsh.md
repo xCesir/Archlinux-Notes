@@ -109,6 +109,11 @@ exit
 ```
 sudo pacman -S nerd-fonts adobe-source-code-pro-fonts ttf-font-awesome powerline-fonts ttf-meslo-nerd 
 ```
+#### [Recommended Font](https://github.com/romkatv/powerlevel10k/blob/master/font.md)
+```
+Meslo Nerd Font 
+```
+
 ### Update (all)
 ```
 pushd ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/
