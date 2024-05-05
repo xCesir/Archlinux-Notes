@@ -111,7 +111,6 @@ sudo pacman -S nerd-fonts adobe-source-code-pro-fonts ttf-font-awesome powerline
 ```
 ### Update (all)
 ```
-omz update
 pushd ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/
 git pull
 popd
@@ -127,6 +126,7 @@ popd
 pushd ~/.oh-my-zsh/custom/themes/powerlevel10k/
 git pull
 popd
+omz update
 exec zsh
 ```
 
