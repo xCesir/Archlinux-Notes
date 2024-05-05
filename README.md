@@ -14,8 +14,8 @@ archinstall
 ````
 /etc/gdm/custom.conf 
 ````
-## Oh-my-zsh
-[oh my zsh_link](https://github.com/ohmyzsh/ohmyzsh/wiki)<br>
+## [Oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/wiki)
+
 [oh my zsh](./ohmyzsh.md)
 
 ## Basic
