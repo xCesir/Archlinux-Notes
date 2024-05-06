@@ -32,8 +32,9 @@ uncomment:
 save and exit
 
 ````
-newgrp libvirt
 sudo usermod -a -G libvirt $(logname)
+newgrp libvirt
+groups $(logname)
 ````
 ````
 sudo systemctl restart libvirtd.service
