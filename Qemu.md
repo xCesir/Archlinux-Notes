@@ -32,7 +32,7 @@ uncomment:
 save and exit
 
 ````
-sudo usermod -a -G libvirt $(whoami)
+sudo usermod -a -G libvirt $(logname)
 newgrp libvirt
 ````
 ````
