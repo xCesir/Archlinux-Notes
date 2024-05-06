@@ -1,19 +1,17 @@
 # Arch-Linux
 
-## run guided install
+## Installation
+
+### guided install
 
 ````
 archinstall
 ````
- Archlinux installation Requirements, dass dieses Repo anwendbar ist:
- - installation per `archinstall`
- - UKI
 
-## Wayland (disable)
+ ### Archlinux installation Requirements, dass dieses Repo immer anwendbar ist:
+ - Installation per Archinstall
+ - UKI (am besten)
 
-````
-/etc/gdm/custom.conf 
-````
 ## [Oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/wiki)
 
 [oh my zsh](./ohmyzsh.md)
