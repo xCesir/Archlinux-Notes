@@ -13,3 +13,8 @@ Es ist häufig der Fall, dass der Service nicht aktiviert ist
 systemctl enable bluetooth
 systemctl start bluetooth
 ````
+## Wayland (disable)
+
+````
+/etc/gdm/custom.conf 
+````
