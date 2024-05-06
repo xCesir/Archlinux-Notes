@@ -41,6 +41,7 @@ In `~/.zshrc` `zsh-history-substring-search` bei `plugins` einfügen bei:
 ```
 plugins=( [plugins...] zsh-history-substring-search)
 ```
+```
 exec zsh
 ```
 ### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
