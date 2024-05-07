@@ -11,12 +11,15 @@ Gegen Tracking
 [Website des Hersteller](https://logseq.com/)
 
 ## fastfetch
+
 wie Neofetch aber mit mehr Informationen
 
 ## Gnome Extension Manager
+
 https://flathub.org/apps/com.mattjakeman.ExtensionManager
 
 ## GDM-Settings
+
 https://aur.archlinux.org/packages/gdm-settings
 
 ## FIrewall UFW
@@ -72,4 +75,19 @@ echo "pinentry-program /usr/bin/pinentry-qt" > ~/.gnupg/gpg-agent.conf
 ````
 ````
 gpg-connect-agent reloadagent /bye
+````
+
+## Nextcloud
+````
+sudo pacman -S nextcloud-client
+````
+
+Es gibt optionale Deps, die nicht automatisch installiert werden.
+Die Info zum Paket kann man mit `pacman -Qi nextcloud-client` auflisten. 
+
+Installieren kann man die optionalen Pakete mit `pacman -S --asdeps`
+
+Nextcloud arbeitet mit Tray-Icons, das kann unter Gnome nach installieren:
+````
+sudo pacman -S gnome-shell-extension-appindicator
 ````
