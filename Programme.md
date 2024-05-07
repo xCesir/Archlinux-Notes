@@ -91,7 +91,13 @@ Nextcloud arbeitet mit Tray-Icons, das kann unter Gnome nach installieren:
 ````
 sudo pacman -S gnome-shell-extension-appindicator
 ````
-
+oder kurz:
+```
+sudo pacman -S nextcloud-client
+sudo pacman -S --asdeps kio nemo-python python-nautilus python-caja
+sudo pacman -S gnome-shell-extension-appindicator
+```
+Dann ausloggen und wieder einloggen und in der Anwendung `Extensions` dann `Appindicator and KStatusNotifierItem Support` aktivieren
 ## Jetbrains
 
 Zum installieren der Jetbrains Produkte stellt jetbrains die eigene Toolbox App auch unter Linux zu verfügumg als One-Click install file.
