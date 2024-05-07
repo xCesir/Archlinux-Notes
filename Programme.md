@@ -77,7 +77,7 @@ echo "pinentry-program /usr/bin/pinentry-qt" > ~/.gnupg/gpg-agent.conf
 gpg-connect-agent reloadagent /bye
 ````
 
-## Nextcloud
+## [Nextcloud](https://wiki.archlinux.org/title/Nextcloud#Synchronization)
 ````
 sudo pacman -S nextcloud-client
 ````
@@ -91,3 +91,8 @@ Nextcloud arbeitet mit Tray-Icons, das kann unter Gnome nach installieren:
 ````
 sudo pacman -S gnome-shell-extension-appindicator
 ````
+
+## Jetbrains
+
+Zum installieren der Jetbrains Produkte stellt jetbrains die eigene Toolbox App auch unter Linux zu verfügumg als One-Click install file.
+[Download](https://www.jetbrains.com/toolbox-app/)
