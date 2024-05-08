@@ -1,5 +1,46 @@
 # Programme
 
+## GNUPG
+````
+sudo pacman -Ss gnupg kleopatra
+````
+````
+echo "pinentry-program /usr/bin/pinentry-gnome3" > ~/.gnupg/gpg-agent.conf 
+````
+oder ohne safe-screen
+````
+echo "pinentry-program /usr/bin/pinentry-qt" > ~/.gnupg/gpg-agent.conf 
+````
+````
+gpg-connect-agent reloadagent /bye
+````
+
+## [Nextcloud](https://wiki.archlinux.org/title/Nextcloud#Synchronization)
+````
+sudo pacman -S nextcloud-client
+````
+
+Es gibt optionale Deps, die nicht automatisch installiert werden.
+Die Info zum Paket kann man mit `pacman -Qi nextcloud-client` auflisten. 
+
+Installieren kann man die optionalen Pakete mit `pacman -S --asdeps`
+
+Nextcloud arbeitet mit Tray-Icons, das kann unter Gnome nach installieren:
+````
+sudo pacman -S gnome-shell-extension-appindicator
+````
+oder kurz:
+```
+sudo pacman -S nextcloud-client
+sudo pacman -S --asdeps kio nemo-python python-nautilus python-caja
+sudo pacman -S gnome-shell-extension-appindicator
+```
+Dann ausloggen und wieder einloggen und in der Anwendung `Extensions` dann `Appindicator and KStatusNotifierItem Support` aktivieren
+## Jetbrains
+
+Zum installieren der Jetbrains Produkte stellt jetbrains die eigene Toolbox App auch unter Linux zu verfügumg als One-Click install file.
+[Download](https://www.jetbrains.com/toolbox-app/)
+
 ## Portmaster by Sarfing
 
 Gegen Tracking
@@ -61,44 +102,3 @@ sudo pacman -S gnome-latex texlive-binextra texlive-langgerman dblatex
 
 ## Update Device Firmware
 [Archwiki](https://wiki.archlinux.org/title/Fwupd#Usage)
-
-## GNUPG
-````
-sudo pacman -Ss gnupg kleopatra
-````
-````
-echo "pinentry-program /usr/bin/pinentry-gnome3" > ~/.gnupg/gpg-agent.conf 
-````
-oder ohne safe-screen
-````
-echo "pinentry-program /usr/bin/pinentry-qt" > ~/.gnupg/gpg-agent.conf 
-````
-````
-gpg-connect-agent reloadagent /bye
-````
-
-## [Nextcloud](https://wiki.archlinux.org/title/Nextcloud#Synchronization)
-````
-sudo pacman -S nextcloud-client
-````
-
-Es gibt optionale Deps, die nicht automatisch installiert werden.
-Die Info zum Paket kann man mit `pacman -Qi nextcloud-client` auflisten. 
-
-Installieren kann man die optionalen Pakete mit `pacman -S --asdeps`
-
-Nextcloud arbeitet mit Tray-Icons, das kann unter Gnome nach installieren:
-````
-sudo pacman -S gnome-shell-extension-appindicator
-````
-oder kurz:
-```
-sudo pacman -S nextcloud-client
-sudo pacman -S --asdeps kio nemo-python python-nautilus python-caja
-sudo pacman -S gnome-shell-extension-appindicator
-```
-Dann ausloggen und wieder einloggen und in der Anwendung `Extensions` dann `Appindicator and KStatusNotifierItem Support` aktivieren
-## Jetbrains
-
-Zum installieren der Jetbrains Produkte stellt jetbrains die eigene Toolbox App auch unter Linux zu verfügumg als One-Click install file.
-[Download](https://www.jetbrains.com/toolbox-app/)
