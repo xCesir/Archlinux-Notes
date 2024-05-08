@@ -48,7 +48,7 @@ yay --version
 Folder löschen, da nich länger benötigt
 ````
 cd ..
-rm -r yay/
+rm -rf yay/
 ````
 
 ### yay
