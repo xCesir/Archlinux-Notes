@@ -11,3 +11,7 @@ OBS + hat viele Integrationen
 ### Freedesktop Platform
 
 Stellt viele Pakete für andere Flathub Pakete Bereit wie z.B. MangoHUD oder streaming Encoder für OBS
+
+### [Identity](https://flathub.org/apps/org.gnome.gitlab.YaLTeR.Identity)
+
+Identity ist ein Programm zum vergleichen von Photos und Videos.
