@@ -102,3 +102,8 @@ sudo pacman -S gnome-latex texlive-binextra texlive-langgerman dblatex
 
 ## Update Device Firmware
 [Archwiki](https://wiki.archlinux.org/title/Fwupd#Usage)
+
+## Audio Effekte
+```
+sudo pacman -S calf lsp-plugins-lv2 mda.lv2 zam-plugins-lv2 yelp easyeffect
+```
