@@ -132,3 +132,5 @@ ln -s /opt/myapp/myappbinary /usr/local/bin/myappbinary
 If you want to know more on the topic, type man hier in a terminal. The difference between `/usr/bin` and `/usr/local/bin` is explained there. In any case, both paths are in the `$PATH` environment variable. That means any binary you put there will be executable by anyone just by giving the name of the binary (and not the full path). So using the above example you can run your program with `myappbinary` instead of having to give the full path `/opt/myapp/myappbinary`.
 
 [Quelle](https://askubuntu.com/questions/65728/where-to-install-software-and-executables-for-all-users)
+
+für DE integrationen [hier](https://wiki.archlinux.org/title/desktop_entries)
