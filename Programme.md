@@ -91,6 +91,15 @@ oder
 ````
 firejail --private --dns=1.1.1.1 --dns=9.9.9.9 firefox -no-remote
 ````
+## Tor
+````
+sudo pacman -S torbrowser-launcher
+````
+
+### firejail example
+````
+firejail --private=~/.local/share/torbrowser/ --dns=9.9.9.9 --dns=1.1.1.1 torbrowser-launcher
+````
 
 ## image [thumbnails](https://wiki.archlinux.org/title/File_manager_functionality#Thumbnail_previews)
 
