@@ -85,6 +85,10 @@ sudo pacman -S firejail firetools
 ### firefox example
 
 ````
+firejail --private --dns=9.9.9.9 --dns=1.1.1.1 firefox -no-remote
+````
+oder
+````
 firejail --private --dns=1.1.1.1 --dns=9.9.9.9 firefox -no-remote
 ````
 
