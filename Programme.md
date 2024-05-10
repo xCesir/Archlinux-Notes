@@ -134,3 +134,19 @@ If you want to know more on the topic, type man hier in a terminal. The differen
 [Quelle](https://askubuntu.com/questions/65728/where-to-install-software-and-executables-for-all-users)
 
 für DE integrationen [hier](https://wiki.archlinux.org/title/desktop_entries)
+
+## CoreCtrl
+
+Zum steuern von AMD CPU und GPU
+```
+sudo pacman -S corectrl
+```
+
+## Docker
+```
+sudo pacman -S docker docker-compose
+sudo systemctl enable docker.socket
+sudo systemctl start docker.socket
+sudo usermod -a -G docker $(logname)                                                                                                                                                                               newgrp docker
+docker run -it --rm archlinux bash -c "echo hello world"
+```
