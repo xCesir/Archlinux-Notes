@@ -58,6 +58,9 @@ archinstall
 ## KDE
 [KDE](./KDE.md)
 
+## Gnome
+[Gnome](./Gnome.md)
+
 ## Yubikey Disk Encryption
 
 [Quelle](https://github.com/agherzan/yubikey-full-disk-encryption)<br>
