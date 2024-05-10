@@ -32,3 +32,8 @@ Seems that the default policy is to have it read/set directly from the bios, but
 
 [Post](https://bbs.archlinux.org/viewtopic.php?id=260589)
 [RedHeat](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/power_management_guide/aspm)
+
+## [Possibly missing firmware for module XXXX](https://wiki.archlinux.org/title/Mkinitcpio#Possibly_missing_firmware_for_module_XXXX)
+````
+yay -S mkinitcpio-firmware
+````
