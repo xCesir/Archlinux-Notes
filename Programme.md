@@ -112,7 +112,17 @@ sudo pacman -S tumbler
 ````
 sudo pacman -S gnome-latex texlive-binextra texlive-langgerman dblatex
 ````
+## tldr
+Ein tool mit Zusammenfassungen und Beispiele für Console Commands
 
+````
+sudo pacman -S tldr
+````
+
+### Beispiel
+````
+tldr sudo
+````
 ## Update Device Firmware
 [Archwiki](https://wiki.archlinux.org/title/Fwupd#Usage)
 
