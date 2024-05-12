@@ -130,6 +130,7 @@ Command-line fuzzy finder
 sudo pacman -S fzf
 echo "source /usr/share/fzf/key-bindings.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 echo "source /usr/share/fzf/completion.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+echo "eval $(fzf --zsh)" >> ${ZDOTDIR:-$HOME}/.zshrc
 ````
 
 ## bat
@@ -142,6 +143,7 @@ sudo pacman -S bat bat-extras
 Magnificent app which corrects your previous console command
 ````
 sudo pacman -S thefuck
+thefuck
 ````
 
 ## Update Device Firmware
