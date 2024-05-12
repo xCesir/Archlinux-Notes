@@ -125,10 +125,17 @@ tldr sudo
 ````
 
 ## fzf
+Command-line fuzzy finder
 ````
 sudo pacman -S fzf
 echo "source /usr/share/fzf/key-bindings.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 echo "source /usr/share/fzf/completion.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+````
+
+## bat
+Cat clone with syntax highlighting and git integration
+````
+sudo pacman -S bat bat-extras
 ````
 
 ### theFuck
