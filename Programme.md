@@ -124,6 +124,13 @@ sudo pacman -S tldr
 tldr sudo
 ````
 
+## fzf
+````
+sudo pacman -S fzf
+echo "source /usr/share/fzf/key-bindings.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+echo "source /usr/share/fzf/completion.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+````
+
 ### theFuck
 Magnificent app which corrects your previous console command
 ````
