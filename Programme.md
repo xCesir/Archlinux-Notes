@@ -123,6 +123,13 @@ sudo pacman -S tldr
 ````
 tldr sudo
 ````
+
+### theFuck
+Magnificent app which corrects your previous console command
+````
+sudo pacman -S thefuck
+````
+
 ## Update Device Firmware
 [Archwiki](https://wiki.archlinux.org/title/Fwupd#Usage)
 
