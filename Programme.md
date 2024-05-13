@@ -186,3 +186,8 @@ sudo usermod -a -G docker $(logname)
 newgrp docker
 docker run -it --rm archlinux bash -c "echo hello world"
 ```
+## mediainfo
+Supplies technical and tag information about media files
+```
+sudo pacman -S mediainfo mediainfo-gui
+```
