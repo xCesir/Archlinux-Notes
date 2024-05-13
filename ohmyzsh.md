@@ -1,6 +1,6 @@
 # oh-my-zsh
 ```
-sudo pacman -S zsh zsh-doc
+sudo pacman -S zsh zsh-doc git
 ```
 
 ## Manual (recommended)
