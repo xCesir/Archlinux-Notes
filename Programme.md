@@ -181,6 +181,8 @@ sudo pacman -S docker docker-compose
 sudo systemctl enable docker.socket
 sudo systemctl start docker.socket
 sudo usermod -a -G docker $(logname)
+```
+```
 newgrp docker
 docker run -it --rm archlinux bash -c "echo hello world"
 ```
