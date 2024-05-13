@@ -89,7 +89,7 @@ omz update
 exec zsh
 ```
 
-## Arch
+## Pacman (was möglich ist; not recommended)
 ### [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/wiki)
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
