@@ -132,6 +132,10 @@ echo "source /usr/share/fzf/key-bindings.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 echo "source /usr/share/fzf/completion.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 echo "eval $(fzf --zsh)" >> ${ZDOTDIR:-$HOME}/.zshrc
 ````
+### fzf with bat preview
+````
+fzf --preview 'bat --color=always {}'
+````
 
 ## bat
 Cat clone with syntax highlighting and git integration
