@@ -61,6 +61,10 @@ archinstall
 ## Gnome
 [Gnome](./Gnome.md)
 
+## Neovim
+
+[Neovim](./Neovim.md)
+
 ## Yubikey Disk Encryption
 
 [Quelle](https://github.com/agherzan/yubikey-full-disk-encryption)<br>
