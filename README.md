@@ -67,7 +67,7 @@ archinstall
 
 ## OpenVPN
 
-[OpenVPN.md](./OpenVPN.md)
+[OpenVPN](./OpenVPN.md)
 
 ## Yubikey Disk Encryption
 
