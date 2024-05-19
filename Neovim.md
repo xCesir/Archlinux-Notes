@@ -20,6 +20,7 @@ call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 ````
