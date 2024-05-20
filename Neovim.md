@@ -26,3 +26,5 @@ call plug#end()
 ````
 Open Neovim
 run `:PlugInstall`
+
+## [Kickstart](https://github.com/nvim-lua/kickstart.nvim)
