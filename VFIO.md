@@ -10,6 +10,7 @@ enable IOMMU and related
 ````
 /etc/mkinitcpio.conf
 ````
+Note: amdgpu durch den treiber für die main gpu ersetzen
 ````
 MODULES=(... vfio_pci vfio vfio_iommu_type1 amdgpu ...)
 ````
@@ -23,7 +24,7 @@ sudo mkinitcpio -P
 ````
 ## PCI Device
 
-#### List
+#### List der Geräte mit ID
 
 ````
 lspci -nnk
@@ -34,6 +35,7 @@ lspci -nnk
 ````
 /etc/kernel/cmdline 
 ````
+Example 2er IDs GPU und GPU-Audio
 ````
 vfio-pci.ids=8086:56a5,8086:4f92
 ````
