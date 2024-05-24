@@ -195,3 +195,13 @@ Supplies technical and tag information about media files
 ```
 sudo pacman -S mediainfo mediainfo-gui
 ```
+
+## [clamAV](https://wiki.archlinux.de/title/ClamAV)
+
+```
+sudo pacman -S clamav
+sudo systemctl daemon-reload
+sudo systemctl enable clamav-freshclam.service
+sudo systemctl start clamav-freshclam.service
+sudo freshclam
+```
