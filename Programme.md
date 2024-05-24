@@ -208,3 +208,9 @@ sudo systemctl enable clamav-daemon.service
 sudo systemctl start clamav-daemon.service
 curl https://secure.eicar.org/eicar.com.txt | clamscan -                                                                                                                                                   
 ```
+
+### exmaple scan
+```
+find /home/archie -type f -print0 | xargs -0 -P $(nproc) clamscan
+```
+
