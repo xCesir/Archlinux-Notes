@@ -159,6 +159,15 @@ Für Root bietet sich eher ein "Basic" Approach an, um etwaige Fehler zu vermeid
 5. nvim ~/.zshrc
 6. Paste, save and `exit`:
 ```
+autoload -Uz compinit promptinit up-line-or-beginning-search down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+compinit
+promptinit
+
+[[ -n "${key[Up]}"   ]] && bindkey -- "${key[Up]}"   up-line-or-beginning-search
+[[ -n "${key[Down]}" ]] && bindkey -- "${key[Down]}" down-line-or-beginning-search
+
 # This will set the default prompt to the clint theme
 prompt clint
 
@@ -211,19 +220,9 @@ add-zle-hook-widget -Uz zle-line-init zle_application_mode_start
 add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
 fi
 
-autoload -Uz compinit promptinit up-line-or-beginning-search down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-compinit
-promptinit
-
-[[ -n "${key[Up]}"   ]] && bindkey -- "${key[Up]}"   up-line-or-beginning-search
-[[ -n "${key[Down]}" ]] && bindkey -- "${key[Down]}" down-line-or-beginning-search
-
 key[Control-Left]="${terminfo[kLFT5]}"
 key[Control-Right]="${terminfo[kRIT5]}"
 
 [[ -n "${key[Control-Left]}"  ]] && bindkey -- "${key[Control-Left]}"  backward-word
 [[ -n "${key[Control-Right]}" ]] && bindkey -- "${key[Control-Right]}" forward-word
-
 ```
