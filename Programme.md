@@ -206,4 +206,5 @@ sudo systemctl start clamav-freshclam.service
 sudo freshclam
 sudo systemctl enbale clamav-daemon.service
 sudo systemctl start clamav-daemon.service
+curl https://secure.eicar.org/eicar.com.txt | clamscan -                                                                                                                                                                
 ```
