@@ -8,4 +8,6 @@
 
 #### mpv is not tilling properly
 
+```
 echo "no-keepaspect-window" >> ~/.config/mpv/mpv.conf
+```
