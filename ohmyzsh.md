@@ -3,7 +3,7 @@
 sudo pacman -S zsh zsh-doc zsh-completions git
 ```
 
-## Manual (recommended)
+## Manual (recommended)f
 ### [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/wiki)
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -16,7 +16,7 @@ nano ~/.zshrc
 In `~/.zshrc` `zsh-autosuggestions` bei `plugins` einfügen bei:
 
 ```
-plugins=(#other_plugins zsh-autosuggestions)
+sed -i 's/plugins=(git/plugins=(git\ zsh-autosuggestions/g' .zshrc
 ```
 
 ### [zsh-completions](https://github.com/zsh-users/zsh-completions)
@@ -39,7 +39,7 @@ nano ~/.zshrc
 ```
 In `~/.zshrc` `zsh-history-substring-search` bei `plugins` einfügen bei:
 ```
-plugins=( [plugins...] zsh-history-substring-search)
+sed -i 's/plugins=(git/plugins=(git\ zsh-history-substring-search/g' .zshrc
 ```
 ```
 exec zsh
