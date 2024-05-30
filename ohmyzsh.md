@@ -148,8 +148,11 @@ sudo pacman -Syu
 ## fastfetch
 Put at the beginning of `~/.zshrc`:
 ```
-sleep 0.1
+sleep 0.2
 fastfetch --logo arch2
+```
+```
+sed '1 i\sleep\ 0.2\nfastfetch\ --logo\ arch2' .zshrc
 ```
 
 ## root
