@@ -123,6 +123,11 @@ sudo pacman -S tldr
 ````
 tldr sudo
 ````
+## bat
+Cat clone with syntax highlighting and git integration
+````
+sudo pacman -S bat bat-extras
+````
 
 ## fzf
 Command-line fuzzy finder
@@ -136,11 +141,8 @@ echo "eval $(fzf --zsh)" >> ${ZDOTDIR:-$HOME}/.zshrc
 ````
 fzf --preview 'bat --color=always {}'
 ````
-
-## bat
-Cat clone with syntax highlighting and git integration
 ````
-sudo pacman -S bat bat-extras
+sed -ie s#alias\ ohmyzsh\=\"mate\ \~\/\.oh\-my\-zsh\"#alias\ ohmyzsh\=\"mate\ \~\/\.oh\-my\-zsh\\nalias\ fzf\-preview\=\"fzf\ \-\-preview\ \'bat\ \-\-color\=always\ \{\}\'\"# .zshrc
 ````
 
 ### theFuck
