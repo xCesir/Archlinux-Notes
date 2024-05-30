@@ -142,7 +142,7 @@ echo "eval $(fzf --zsh)" >> ${ZDOTDIR:-$HOME}/.zshrc
 fzf --preview 'bat --color=always {}'
 ````
 ````
-❯ sed -ie s#alias\ ohmyzsh\=\"mate\ \~\/\.oh\-my\-zsh\"#alias\ ohmyzsh\=\"mate\ \~\/\.oh\-my\-zsh\"\\nalias\ fzf\-preview\=\"fzf\ \-\-preview\ \'bat\ \-\-color\=always\ \{\}\'\"# .zshrc
+sed -ie s#alias\ ohmyzsh\=\"mate\ \~\/\.oh\-my\-zsh\"#alias\ ohmyzsh\=\"mate\ \~\/\.oh\-my\-zsh\"\\nalias\ fzf\-preview\=\"fzf\ \-\-preview\ \'bat\ \-\-color\=always\ \{\}\'\"# .zshrc
 ````
 
 ### theFuck
