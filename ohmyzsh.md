@@ -16,7 +16,7 @@ nano ~/.zshrc
 In `~/.zshrc` `zsh-autosuggestions` bei `plugins` einfügen bei:
 
 ```
-sed -i 's/plugins=(git/plugins=(git\ zsh-autosuggestions/g' .zshrc
+sed -i 's/plugins=(git/plugins=(git\ zsh-autosuggestions/g' ~/.zshrc
 ```
 
 ### [zsh-completions](https://github.com/zsh-users/zsh-completions)
@@ -39,7 +39,7 @@ nano ~/.zshrc
 ```
 In `~/.zshrc` `zsh-history-substring-search` bei `plugins` einfügen bei:
 ```
-sed -i 's/plugins=(git/plugins=(git\ zsh-history-substring-search/g' .zshrc
+sed -i 's/plugins=(git/plugins=(git\ zsh-history-substring-search/g' ~/.zshrc
 ```
 ```
 exec zsh
