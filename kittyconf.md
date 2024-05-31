@@ -1,3 +1,8 @@
+```
+nvim ~/.config/kitty/kitty.conf
+```
+paste:
+```
 background_opacity 0.76
 draw_minimal_borders yes
 window_padding_width 2
@@ -9,3 +14,4 @@ font_family MesloLGS NF
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
+```
