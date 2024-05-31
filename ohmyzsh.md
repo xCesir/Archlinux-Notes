@@ -11,7 +11,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
 ```
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-nano ~/.zshrc
 ```
 In `~/.zshrc` `zsh-autosuggestions` bei `plugins` einfügen bei:
 
@@ -35,7 +34,6 @@ Falls es nicht funktiniert ist ein Issue im Git verlinkt
 ### [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
 ``` 
 git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
-nano ~/.zshrc
 ```
 In `~/.zshrc` `zsh-history-substring-search` bei `plugins` einfügen bei:
 ```
@@ -152,7 +150,7 @@ sleep 0.2
 fastfetch --logo arch2
 ```
 ```
-sed '1 i\sleep\ 0.2\nfastfetch\ --logo\ arch2' .zshrc
+sed -i '1 i\sleep\ 0.2\nfastfetch\ --logo\ arch2' .zshrc
 ```
 
 ## root
