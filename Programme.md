@@ -150,6 +150,8 @@ Magnificent app which corrects your previous console command
 ````
 sudo pacman -S thefuck
 thefuck
+fuck
+fuck
 ````
 
 ## Update Device Firmware
