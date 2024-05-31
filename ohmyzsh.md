@@ -26,7 +26,7 @@ nano ~/.zshrc
 nach `source $ZSH/oh-my-zsh.sh` suche und in der Zeile davor `fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src` einfügen:
 
 ```
-sed 's/sourc\e \$ZSH\/oh-my-zsh.sh/fpath\+\=\$\{ZSH\_CUSTOM\:\-\$\{ZSH\:\-\~\/.oh\-my\-zsh\}\/custom\}\/plugins\/zsh-completions\/src\nsourc\e \$ZSH\/oh-my-zsh.sh/g' ~/.zshrc
+sed -i 's/sourc\e \$ZSH\/oh-my-zsh.sh/fpath\+\=\$\{ZSH\_CUSTOM\:\-\$\{ZSH\:\-\~\/.oh\-my\-zsh\}\/custom\}\/plugins\/zsh-completions\/src\nsourc\e \$ZSH\/oh-my-zsh.sh/g' ~/.zshrc
 ```
 
 Falls es nicht funktiniert ist ein Issue im Git verlinkt
