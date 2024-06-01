@@ -7,7 +7,7 @@ sudo pacman -S zsh zsh-doc zsh-completions git
 ### [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/wiki)
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
+```My
 ### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
 ```
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -156,7 +156,7 @@ sed -i '1 i\sleep\ 0.2\nfastfetch\ --logo\ arch2' .zshrc
 ## root
 Für Root bietet sich eher ein "Basic" Approach an, um etwaige Fehler zu vermeiden.
 1. Login to root
-2. `chsh -s /usr/bin/zs`
+2. `chsh -s /usr/bin/zsh`
 3. `exit`
 4. login to root
 5. nvim ~/.zshrc
