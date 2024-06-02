@@ -12,6 +12,10 @@ archinstall
  - Installation per Archinstall
  - UKI (am besten)
 
+## troubleshooting (Update Kleopatra Bug 2024-06-02)
+
+[troubleshooting](./troubleshooting.md)
+
 ## [Oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/wiki)
 
 [oh my zsh](./ohmyzsh.md)
@@ -35,10 +39,6 @@ archinstall
 ## Commands
 
 [Commands](./Commands.md)
-
-## troubleshooting
-
-[troubleshooting](./troubleshooting.md)
 
 ## VFIO
 
