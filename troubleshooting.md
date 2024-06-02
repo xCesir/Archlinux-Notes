@@ -1,5 +1,12 @@
 # troubleshooting
 
+## Kleopatra
+Akutell kann es dazu kommen, dass Kleopatra nicht startet nach den letzten Update wie in diesem [Forum-Post](https://bbs.archlinux.org/viewtopic.php?id=296219) beschrieben.
+Die Lösung ist es via Console mit folgendem Befehl zu starten:
+````
+export QT_QPA_PLATFORM=XCB && kleopatra
+````
+
 ## fonts
 ````
 sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
