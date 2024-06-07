@@ -1,7 +1,7 @@
 # Archlinux-Notes-By-xCesir
 
 ## Update
-- Probleme mit Kleopatra? Siehe troubleshooting
+- Probleme mit Kleopatra? Siehe troubleshooting (Stand 2024-06-02)
 - Kein Internet bei Virtuellen Maschinen? Siehe troubleshooting (Stand 2024-06-07)
 
 ## Installation
@@ -16,7 +16,7 @@ archinstall
  - Installation per Archinstall
  - UKI (am besten)
 
-## troubleshooting (Update Kleopatra Bug 2024-06-02)
+## troubleshooting
 
 [troubleshooting](./troubleshooting.md)
 
