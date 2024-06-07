@@ -1,5 +1,9 @@
 # Archlinux-Notes-By-xCesir
 
+## Update
+- Probleme mit Kleopatra siehe troubleshooting
+- Kein Internet bei Virtuellen Maschinen? Siehe troubleshooting
+
 ## Installation
 
 ### guided install
@@ -27,6 +31,9 @@ archinstall
 ## LUKS
 
 [Luks](./Luks.md)
+
+## Firewall
+[Firewall](./Firewall.md)
 
 ## Programme
 
