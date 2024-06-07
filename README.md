@@ -1,8 +1,8 @@
 # Archlinux-Notes-By-xCesir
 
 ## Update
-- Probleme mit Kleopatra siehe troubleshooting
-- Kein Internet bei Virtuellen Maschinen? Siehe troubleshooting
+- Probleme mit Kleopatra? Siehe troubleshooting
+- Kein Internet bei Virtuellen Maschinen? Siehe troubleshooting (Stand 2024-06-07)
 
 ## Installation
 
