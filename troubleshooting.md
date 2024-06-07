@@ -1,5 +1,9 @@
 # troubleshooting
 
+## Kein Internet virtuelle Maschinen
+Mit dem letzten Update von UFW wird der Internet Verkehr von libvirt, welcher für virtuelle Maschinen notwendig ist, gestört.
+Die bisherige Lösung ist es bei der [Firewall](./Firewall.md) von `UFW` zu `Firewalld` zu wechseln.
+
 ## Kleopatra
 Akutell kann es dazu kommen, dass Kleopatra nicht startet nach den letzten Update wie in diesem [Forum-Post](https://bbs.archlinux.org/viewtopic.php?id=296219) beschrieben.
 Die Lösung ist es via Console mit folgendem Befehl zu starten:
