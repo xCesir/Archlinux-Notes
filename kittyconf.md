@@ -2,6 +2,7 @@
 sudo pacman -S kitty 
 ```
 ```
+mkdir ~/.config/kitty/
 nvim ~/.config/kitty/kitty.conf
 ```
 paste:
