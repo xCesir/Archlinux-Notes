@@ -153,7 +153,7 @@ sleep 0.2
 fastfetch --logo arch2
 ```
 ```
-sed -i '1 i\sleep\ 0.2\nfastfetch\ --logo\ arch2' .zshrc
+sed -i '1 i\sleep\ 0.2\nfastfetch\ --logo\ arch2' ~/.zshrc
 ```
 
 ## root
