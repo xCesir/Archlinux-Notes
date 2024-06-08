@@ -1,4 +1,7 @@
 ```
+sudo pacman -S kitty 
+```
+```
 nvim ~/.config/kitty/kitty.conf
 ```
 paste:
