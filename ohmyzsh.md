@@ -144,6 +144,9 @@ sudo pacman -Syu
 ```
 
 ## fastfetch
+```
+sudo pacman -S fastfetch
+```
 Put at the beginning of `~/.zshrc`:
 ```
 sleep 0.2
