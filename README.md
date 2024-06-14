@@ -76,7 +76,6 @@ archinstall
 
 [OpenVPN](./OpenVPN.md)
 
-## Yubikey Disk Encryption
+## [Yubikey Disk Encryption](https://github.com/agherzan/yubikey-full-disk-encryption)
 
-[Quelle](https://github.com/agherzan/yubikey-full-disk-encryption)<br>
 [Yubikey Disk Encryption](./YubikeyDiskEncryption.md)
