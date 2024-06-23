@@ -68,6 +68,10 @@ archinstall
 ## Gnome
 [Gnome](./Gnome.md)
 
+## Hyprland
+[Hyprland](./Hyprland.md)
+
+
 ## Neovim
 
 [Neovim](./Neovim.md)
