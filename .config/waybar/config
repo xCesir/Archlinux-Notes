@@ -41,7 +41,7 @@
 
 "custom/clipboard":{
   "format":"",
-  "on-click": "cliphist list | wofi --dmenu | cliphist decode | wl-copy",
+  "on-click": "copyq show",
   "interval":86400
 },
 
