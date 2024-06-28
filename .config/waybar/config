@@ -2,7 +2,7 @@
   "layer": "top", "position": "top",
   "modules-left": ["custom/logo", "clock", "group/motherboard", "hyprland/window",],
   "modules-center": [  "hyprland/workspaces" ],
-  "modules-right": ["tray", "custom/clipboard", "backlight", "idle_inhibitor", "group/audio", "network", "custom/notification", ],
+  "modules-right": ["tray", "group/privacy", "custom/clipboard", "backlight", "idle_inhibitor", "group/audio", "network", "custom/notification", ],
   "reload_style_on_change":true,
 
   "custom/logo": {
@@ -272,6 +272,63 @@
         "tooltip-format": "Notifications"
 
     },
+
+
+"group/privacy": {
+    "orientation": "horizontal",
+    "modules": [
+      "privacy#microphone",
+      "privacy#screenshare",
+      ]	
+},
+
+"group/privacyextended": {
+    "orientation": "horizontal",
+    "modules": [
+      "privacy#microphone",
+      "privacy#audio",
+      "privacy#screenshare",
+      ]
+},
+
+    "privacy#microphone": {
+	"icon-spacing": 4,
+	"icon-size": 18,
+	"transition-duration": 250,
+	"modules": [
+		{
+			"type": "audio-in",
+			"tooltip": true,
+			"tooltip-icon-size": 24
+		},
+	]
+},
+
+	"privacy#audio": {
+		"icon-spacing": 4,
+		"icon-size": 18,
+		"transition-duration": 250,
+		"modules": [
+			{
+				"type": "audio-out",
+				"tooltip": true,
+				"tooltip-icon-size": 24
+			},
+		]
+	},
+
+"privacy#screenshare": {
+	"icon-spacing": 4,
+	"icon-size": 18,
+	"transition-duration": 250,
+	"modules": [
+		{
+			"type": "screenshare",
+			"tooltip": true,
+			"tooltip-icon-size": 24
+		},
+	]
+},
 
 }
 

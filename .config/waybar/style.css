@@ -59,6 +59,8 @@ window#waybar.hidden {
 #network,
 #pulseaudio,
 #pulseaudio-slider,
+#group-privacyextended
+#group-privacy
 #taskbar button,
 #taskbar,
 #temperature,
@@ -324,4 +326,8 @@ window#waybar.hidden {
 
 #custom-notification {
   color:@color1;
+}
+
+#privacy  {
+  color: darkorange;
 }
