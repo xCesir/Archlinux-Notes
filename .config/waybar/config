@@ -292,7 +292,7 @@
 },
 
     "privacy#microphone": {
-	"icon-spacing": 4,
+	"icon-spacing": 5,
 	"icon-size": 18,
 	"transition-duration": 250,
 	"modules": [
@@ -305,7 +305,7 @@
 },
 
 	"privacy#audio": {
-		"icon-spacing": 4,
+		"icon-spacing": 5,
 		"icon-size": 18,
 		"transition-duration": 250,
 		"modules": [
@@ -318,7 +318,7 @@
 	},
 
 "privacy#screenshare": {
-	"icon-spacing": 4,
+	"icon-spacing": 5,
 	"icon-size": 18,
 	"transition-duration": 250,
 	"modules": [
