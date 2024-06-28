@@ -2,7 +2,7 @@
   "layer": "top", "position": "top",
   "modules-left": ["custom/logo", "clock", "group/motherboard", "hyprland/window",],
   "modules-center": [  "hyprland/workspaces" ],
-  "modules-right": ["tray", "custom/clipboard", "backlight", "idle_inhibitor", "group/audio", "network",],
+  "modules-right": ["tray", "custom/clipboard", "backlight", "idle_inhibitor", "group/audio", "network", "custom/notification", ],
   "reload_style_on_change":true,
 
   "custom/logo": {
@@ -264,6 +264,13 @@
     "tooltip-format": "{timeTo} {power}w",
 
 },
+
+    "custom/notification": {
+        "format": "<big></big>",
+        "on-click": "swaync-client -t -sw",
+        "tooltip-format": "Notifications"
+
+    },
 
 }
 

@@ -76,6 +76,7 @@ window#waybar.hidden {
 #custom-logo,
 #custom-lock,
 #custom-menu,
+#custom-notification,
 #custom-power_vertical,
 #custom-power,
 #custom-swaync,
@@ -318,5 +319,9 @@ window#waybar.hidden {
 }
 
 #hyprland-language {
+  color:@color1;
+}
+
+#custom-notification {
   color:@color1;
 }
