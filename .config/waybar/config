@@ -27,12 +27,12 @@
 		"default": "" 
 	},
        "persistent-workspaces": {
-         "*": [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+         "*": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
        }
 },
 
 "idle_inhibitor":{
-  "format": "<span font='12'>{icon} </span>",
+  "format": "<span font='12'>{icon}</span>",
   "format-icons": {
     "activated":"󰈈",
     "deactivated":"󰈉"
@@ -140,8 +140,8 @@
 },
 
     "pulseaudio": {
-    "format": "{icon} {volume}%",
-    "format-bluetooth": "{icon} 󰂰 {volume}%",
+    "format": "{icon}  {volume}%",
+    "format-bluetooth": "{icon} 󰂰  {volume}%",
     "format-muted": "󰖁",
     "format-icons": {
         "headphone": "",
