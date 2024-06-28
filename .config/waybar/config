@@ -1,8 +1,8 @@
 {
   "layer": "top", "position": "top",
-  "modules-left": ["custom/logo", "clock", "group/motherboard", "hyprland/window",],
+  "modules-left": ["group/power", "clock", "group/motherboard", "hyprland/window",],
   "modules-center": [  "hyprland/workspaces" ],
-  "modules-right": ["tray", "group/privacy", "custom/clipboard", "backlight", "idle_inhibitor", "group/audio", "network", "custom/notification", ],
+  "modules-right": ["tray", "group/privacy", "custom/clipboard", "backlight", "idle_inhibitor", "group/audio", "network", "custom/notification",],
   "reload_style_on_change":true,
 
   "custom/logo": {
@@ -34,14 +34,14 @@
 "idle_inhibitor":{
   "format": "<span font='12'>{icon}</span>",
   "format-icons": {
-    "activated":"󰈈",
-    "deactivated":"󰈉"
+    "activated":"󰈈 ",
+    "deactivated":"󰈉 "
   }
 },
 
 
 "custom/clipboard":{
-  "format":"",
+  "format":" ",
   "on-click": "copyq show",
   "interval":86400
 },
@@ -328,6 +328,42 @@
 			"tooltip-icon-size": 24
 		},
 	]
+},
+
+"group/power": {
+    "orientation": "horizontal",
+       "icon-spacing": 4,
+    "drawer": {
+        "transition-duration": 500,
+        "transition-left-to-right": true,
+    },
+    "modules": [
+   	"custom/logo",
+        "custom/power", // First element is the "group leader" and won't ever be hidden
+        "custom/quit",
+        "custom/lock",
+        "custom/reboot",
+    ]
+},
+"custom/quit": {
+    "format": "<span font='10'> 󰗼 </span>",
+    "tooltip": false,
+    "on-click": "hyprctl dispatch exit"
+},
+"custom/lock": {
+  "format": "<span font='10'> 󰍁 </span>",
+    "tooltip": false,
+    "on-click": "swaylock"
+},
+"custom/reboot": {
+    "format": "<span font='10'> 󰜉 </span>",
+    "tooltip": false,
+    "on-click": "reboot"
+},
+"custom/power": {
+    "format": "<span font='10'>  </span>",
+    "tooltip": false,
+    "on-click": "shutdown now"
 },
 
 }

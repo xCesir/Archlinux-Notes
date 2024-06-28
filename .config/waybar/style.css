@@ -59,8 +59,9 @@ window#waybar.hidden {
 #network,
 #pulseaudio,
 #pulseaudio-slider,
-#group-privacyextended
-#group-privacy
+#group-power,
+#group-privacyextended,
+#group-privacy,
 #taskbar button,
 #taskbar,
 #temperature,
@@ -69,6 +70,7 @@ window#waybar.hidden {
 #wireplumber,
 #workspaces,
 #hyprland-language, 
+#custom-quit,
 #custom-clipboard,
 #custom-backlight,
 #custom-cycle_wall,
@@ -330,4 +332,20 @@ window#waybar.hidden {
 
 #privacy  {
   color: darkorange;
+}
+
+#group-power {
+  color:@color1;
+}
+
+#custom-quit {
+  color:@color1;
+}
+
+#custom-reboot {
+  color:@color1;
+}
+
+#custom-logo {
+  color:@color1;
 }
