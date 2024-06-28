@@ -75,7 +75,7 @@
     "modules": [
       "cpu",
       "memory",
-      "temperature",
+      "custom/gpu",
       "disk",
       ]	
 },
@@ -332,6 +332,11 @@
     "on-click": "shutdown now"
 },
 
+"custom/gpu": {
+  "exec": "cat /sys/class/hwmon/hwmon0/device/gpu_busy_percent",
+  "format": "{}% 󰾲",
+  "return-type": "",
+  "interval": 1
+},
+
 }
-
-
