@@ -81,12 +81,23 @@
 },
 
 "cpu": {
-    "format": "{usage}% 󰍛",  
-    "interval": 1,
-    "format-alt-click": "click",
-    "format-alt": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% 󰍛",
-    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
-    "on-click-right": "kitty --title btop sh -c 'btop'"
+     "format": "{usage}% 󰍛",  
+     "interval": 5,
+     "format-alt-click": "click",
+   //"format-alt": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% 󰍛",
+   //"format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+     "format-alt": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7} {usage:}% 󰍛",
+     "format-icons": [
+          "<span color='#69ff94'>▁</span>", // green
+          "<span color='#2aa9ff'>▂</span>", // blue
+          "<span color='#f8f8f2'>▃</span>", // white
+          "<span color='#f8f8f2'>▄</span>", // white
+          "<span color='#ffffa5'>▅</span>", // yellow
+          "<span color='#ffffa5'>▆</span>", // yellow
+          "<span color='#ff9977'>▇</span>", // orange
+          "<span color='#dd532e'>█</span>"  // red
+     ],
+     "on-click-right": "kitty --title btop sh -c 'btop'"
 },
 
 
