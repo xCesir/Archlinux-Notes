@@ -21,7 +21,6 @@ sed -i 's/plugins=(git/plugins=(git\ zsh-autosuggestions/g' ~/.zshrc
 ### [zsh-completions](https://github.com/zsh-users/zsh-completions)
 ```
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
-nano ~/.zshrc
 ```
 nach `source $ZSH/oh-my-zsh.sh` suche und in der Zeile davor `fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src` einfügen:
 
