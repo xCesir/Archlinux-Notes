@@ -3,7 +3,7 @@
 sudo pacman -S zsh zsh-doc zsh-completions git
 ```
 
-## Manual (recommended)f
+## Manual (recommended)
 ### [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/wiki)
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
