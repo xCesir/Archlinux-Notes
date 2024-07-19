@@ -156,7 +156,7 @@ sed -i '1 i\sleep\ 0.2\nfastfetch\ --logo\ arch2' ~/.zshrc
 ```
 
 ## root
-Für Root bietet sich eher ein "Basic" Approach an, um etwaige Fehler zu vermeiden.
+Für Root bietet sich eher ein "basic approach" an, um etwaige Fehler zu vermeiden.
 1. Login to root
 2. `chsh -s /usr/bin/zsh`
 3. `exit`
