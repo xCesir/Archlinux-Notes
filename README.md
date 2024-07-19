@@ -12,9 +12,17 @@
 archinstall
 ````
 
+### manuell install
+
+***wip***
+
  ### Archlinux installation Requirements, dass dieses Repo immer anwendbar ist:
- - Installation per Archinstall
- - UKI (am besten)
+ - Systemd-Boot
+ - Zen-Kernel
+ - UKI
+ - btrfs (optional)
+ - dm-crypt (optional)
+ - lvm (optional)
 
 ## troubleshooting
 
