@@ -20,6 +20,9 @@ archinstall
  - Systemd-Boot
  - Zen-Kernel
  - UKI
+ - Gnome
+ - KDE
+ - KDE Applications
  - btrfs (optional)
  - dm-crypt (optional)
  - lvm (optional)
