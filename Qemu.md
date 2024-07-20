@@ -46,26 +46,26 @@ Next, unload KVM modules.
 
 To unload KVM module on INTEL systems, run:
 ````
-$ sudo modprobe -r kvm_intel
+sudo modprobe -r kvm_intel
 ````
 
 On AMD systems:
 ````
-$ sudo modprobe -r kvm_amd
+sudo modprobe -r kvm_amd
 ````
 Reload the KVM module with the nested feature enabled on INTEL CPUs with command:
 ````
-$ sudo modprobe kvm_intel nested=1
+sudo modprobe kvm_intel nested=1
 ````
 Reload the KVM module with the nested feature enabled on AMD CPUs using command:
 ````
-$ sudo modprobe kvm_amd nested=1
+sudo modprobe kvm_amd nested=1
 ````
 Enable Nested Virtualization Permanently
 
 Please note that nested VT feature is only enabled until your reboot the KVM host system. To permanently enable the nested feature, edit /etc/modprobe.d/kvm.conf file:
 ````
-$ sudo vi /etc/modprobe.d/kvm.conf
+sudo vi /etc/modprobe.d/kvm.conf
 ````
 If the file doesn't exists, just create it.
 
@@ -84,7 +84,7 @@ Done! We have enabled nested VT on KVM host system.
 Verify If Nested Virtualization Is Enabled In KVM Host
 If your processor is INTEL, check the "/sys/module/kvm_intel/parameters/nested" file using "cat" command:
 ````
-$ cat /sys/module/kvm_intel/parameters/nested
+cat /sys/module/kvm_intel/parameters/nested
 ````
 If it returns "Y" or "1", it means that your system supports nested virtualization. If the output is "N" or "0", your system won't support nested virtualization.
 
@@ -92,7 +92,7 @@ If your processor is AMD, check the contents of "/sys/module/kvm_amd/parameters/
 
 Alternatively, you can use the following command to ensure "kvm_intel" kernel module has nesting enabled:
 ````
-$ modinfo kvm_intel | grep -i nested
+modinfo kvm_intel | grep -i nested
 ````
 Sample output:
 ````
@@ -101,7 +101,7 @@ parm:           nested:bool
 ````
 On AMD CPU:
 ````
-$ modinfo kvm_amd | grep -i nested
+modinfo kvm_amd | grep -i nested
 ````
 
 Well, my KVM host supports nested virtualization and it is already enabled.
@@ -111,7 +111,7 @@ We can enable nested feature on a KVM VM either from command line or using a gra
 Enable nested feature in KVM guests from command line
 Log in to the virsh console:
 ````
-$ virsh
+virsh
 ````
 Edit the VM in which you want to enable nested feature:
 ````
