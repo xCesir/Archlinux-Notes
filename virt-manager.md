@@ -30,3 +30,9 @@ Beispiel
 ````
 sudo mount -t virtiofs mount_tag_pictures /mnt/pictures
 ````
+
+### Linux guest tools
+
+sudo pacman -S qemu-guest-agent spice-vdagent
+sudo systemctl enable qemu-guest-agent
+sudo systemctl start qemu-guest-agent
