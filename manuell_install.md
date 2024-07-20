@@ -6,7 +6,7 @@ loadkeys de-latin1
 ---
 Zuerst müssen wir den Namen unseres Laufwerks finden:
 ```
-$ lsblk
+lsblk
 ```
 ```
 NAME  MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
@@ -24,16 +24,16 @@ lshw -class disk -class storage
 
 Unser Laufwerk ist in diesem Fall /dev/vda/, also verwenden wir sgdisk, um die Festplatte einzurichten:
 ```
-$ sgdisk -Z /dev/vda
-$ sgdisk -n1:0:+1G -t1:ef00 -c1:EFI -N2 -t2:8304 -c2:LINUXROOT /dev/vda
-$ partprobe -s /dev/vda
+sgdisk -Z /dev/vda
+sgdisk -n1:0:+1G -t1:ef00 -c1:EFI -N2 -t2:8304 -c2:LINUXROOT /dev/vda
+partprobe -s /dev/vda
 ```
 ---
 
 Wir sollten nun eine EFI-Partition auf `/dev/vda1` und unsere Root-Partition auf `/dev/vda2` haben.
 
 ```
-$ lsblk /dev/vda
+lsblk /dev/vda
 ```
 ```
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
@@ -47,15 +47,15 @@ vda    254:0    0   30G  0 disk
 Verschlüsseln wir unsere Root-Partition mit LUKS, indem wir cryptsetup verwenden:
 
 ```
-$ cryptsetup luksFormat --type luks2 /dev/vda2
-$ cryptsetup open /dev/vda2 linuxroot
+cryptsetup luksFormat --type luks2 /dev/vda2
+cryptsetup open /dev/vda2 linuxroot
 ```
 ---
 
 Erstellen wir die Dateisysteme:
 ```
-$ mkfs.vfat -F32 -n EFI /dev/vda1
-$ mkfs.btrfs -f -L linuxroot /dev/mapper/linuxroot
+mkfs.vfat -F32 -n EFI /dev/vda1
+mkfs.btrfs -f -L linuxroot /dev/mapper/linuxroot
 ```
 
 ---
@@ -63,15 +63,15 @@ $ mkfs.btrfs -f -L linuxroot /dev/mapper/linuxroot
 Hängen wir unsere Partitionen ein und erstellen unsere btrfs-Subvolumes:
 
 ```
-$ mount /dev/mapper/linuxroot /mnt
-$ mkdir /mnt/efi
-$ mount /dev/vda1 /mnt/efi
-$ btrfs subvolume create /mnt/home
-$ btrfs subvolume create /mnt/srv
-$ btrfs subvolume create /mnt/var
-$ btrfs subvolume create /mnt/var/log
-$ btrfs subvolume create /mnt/var/cache
-$ btrfs subvolume create /mnt/var/tmp
+mount /dev/mapper/linuxroot /mnt
+mkdir /mnt/efi
+mount /dev/vda1 /mnt/efi
+btrfs subvolume create /mnt/home
+btrfs subvolume create /mnt/srv
+btrfs subvolume create /mnt/var
+btrfs subvolume create /mnt/var/log
+btrfs subvolume create /mnt/var/cache
+btrfs subvolume create /mnt/var/tmp
 ```
 ---
 
@@ -79,16 +79,16 @@ $ btrfs subvolume create /mnt/var/tmp
 
 Aktualisieren wir die pacman-Spiegel und erstellen wir mit pacstrap eine Basisinstallation:
 ```
-$ reflector --country Germany --age 24 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
-$ pacstrap -K /mnt base base-devel linux linux-firmware amd-ucode vim nano cryptsetup btrfs-progs dosfstools util-linux git unzip kitty networkmanager sudo
+reflector --country Germany --age 24 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+pacstrap -K /mnt base base-devel linux linux-firmware amd-ucode vim nano cryptsetup btrfs-progs dosfstools util-linux git unzip kitty networkmanager sudo
 ```
 
 ---
 
 Aktualisieren Sie unsere Spracheinstellungen:
 ```
-$ sed -i -e "/^#"de_DE.UTF-8"/s/^#//" /mnt/etc/locale.gen
-$ systemd-firstboot --root /mnt --prompt
+sed -i -e "/^#"de_DE.UTF-8"/s/^#//" /mnt/etc/locale.gen
+systemd-firstboot --root /mnt --prompt
 ```
 
 ```
@@ -103,7 +103,7 @@ Please configure your system!
 ‣ Please enter hostname for new system (empty to skip): archlinux
 /mnt/etc/hostname written.
 
-$ arch-chroot /mnt locale-gen
+arch-chroot /mnt locale-gen
 Generating locales...
   de_DE.UTF-8... done
 Generation complete.
@@ -117,17 +117,17 @@ Wir erstellen unser lokales Benutzerkonto, in diesem Fall den Benutzernamen `use
 
 ### sudo (recommended):
 ```
-$ arch-chroot /mnt useradd -G sudo -m user 
-$ arch-chroot /mnt passwd user
-$ echo "user ALL=(ALL) ALL" >> /mnt/etc/sudoers.d/00_user
+arch-chroot /mnt useradd -G sudo -m user 
+arch-chroot /mnt passwd user
+echo "user ALL=(ALL) ALL" >> /mnt/etc/sudoers.d/00_user
 ```
 ... füge die `wheel`-Gruppe hinzu und geben der wheel-Gruppe sudo-Rechte:
 
 ### Wheel (not recommended):
 ```
-$ arch-chroot /mnt useradd -G sudo -m user 
-$ arch-chroot /mnt passwd user
-$ sed -i -e '/^# %sudo ALL=(ALL:ALL) ALL/s/^# //' /mnt/etc/sudoers
+arch-chroot /mnt useradd -G sudo -m user 
+arch-chroot /mnt passwd user
+sed -i -e '/^# %sudo ALL=(ALL:ALL) ALL/s/^# //' /mnt/etc/sudoers
 ```
 
 ---
@@ -136,14 +136,14 @@ $ sed -i -e '/^# %sudo ALL=(ALL:ALL) ALL/s/^# //' /mnt/etc/sudoers
 Wir wollen Unified Kernel Images erstellen, also erstellen wir zuerst unsere Kernel `cmdline`-Datei.
 
 ```
-$ echo "quiet rw" >> /mnt/etc/kernel/cmdline
+echo "quiet rw" >> /mnt/etc/kernel/cmdline
 ```
 ---
 
 EFI-Ordnerstruktur erstellen:
 
 ```
-$ mkdir -p /mnt/efi/EFI/Linux
+mkdir -p /mnt/efi/EFI/Linux
 ```
 ---
 
@@ -191,14 +191,14 @@ fallback_options="-S autodetect"
 
 Und UKIs generieren:
 ```
-$ arch-chroot /mnt mkinitcpio -P
+arch-chroot /mnt mkinitcpio -P
 ```
 
 ---
 
 Wenn wir einen Blick in unsere EFI-Partition werfen, sollten wir unsere UKIs sehen:
 ```
-$ ls -lR /mnt/efi
+ls -lR /mnt/efi
 ```
 ```
 /mnt/efi:
@@ -221,11 +221,11 @@ total 118668
 OK, wir sind fast fertig mit dem Archiso, wir müssen nur noch einige Dienste aktivieren und unseren Bootloader installieren:
 
 ```
-$ systemctl --root /mnt enable systemd-resolved systemd-timesyncd NetworkManager
-$ systemctl --root /mnt mask systemd-networkd
-$ arch-chroot /mnt bootctl install --esp-path=/efi
+systemctl --root /mnt enable systemd-resolved systemd-timesyncd NetworkManager
+systemctl --root /mnt mask systemd-networkd
+arch-chroot /mnt bootctl install --esp-path=/efi
 ```
 ```
-$ sync
-$ systemctl reboot --firmware-setup
+sync
+systemctl reboot --firmware-setup
 ```
