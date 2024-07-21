@@ -1,10 +1,16 @@
 # Archlinux-Notes-By-xCesir
 
+## Zielsetzung
+Bei diesem Repo handelt es sich ausschließlich um eine persönliche Zusammenfassung von wesentlichen Inhalten für Arch Linux.
+Das Repo ausschließlich dafür geteilt, um meine gesammelten Informationen auch zu nutzen.
+Das Beitragen zum Repo ist generell möglich.
+
+Warum ist das Repo privat?
+Aufgrund von Lizenz Konflikten.
+
 ## to do:
 - Pop-Shell
 - Kitty-Terminal inline char für [Halftone](https://en.wikipedia.org/wiki/Halftone)
-
-
 
 ## Update
 
