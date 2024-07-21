@@ -130,6 +130,11 @@ arch-chroot /mnt passwd user
 sed -i -e '/^# %sudo ALL=(ALL:ALL) ALL/s/^# //' /mnt/etc/sudoers
 ```
 
+### Root Passwort setzen
+```
+arch-chroot /mnt passwd
+```
+
 ---
 ## Unified Kernel Image
 
