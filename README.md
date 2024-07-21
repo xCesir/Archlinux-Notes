@@ -2,7 +2,7 @@
 
 ## to do:
 - Pop-Shell
-- Kitty-Terminal inline shade Darstellung
+- Kitty-Terminal inline char für [Halftone](https://en.wikipedia.org/wiki/Halftone)
 
 
 
