@@ -1,8 +1,14 @@
 # Archlinux-Notes-By-xCesir
 
+## to do:
+- Pop-Shell
+- Kitty-Terminal inline shade Darstellung
+
+
+
 ## Update
-- Probleme mit Kleopatra? Siehe troubleshooting (Stand 2024-06-02)
-- Kein Internet bei Virtuellen Maschinen? Siehe troubleshooting (Stand 2024-06-07)
+
+/
 
 ## Installation
 
@@ -12,7 +18,7 @@
 archinstall
 ````
 
-### manuell install
+### manuell install (not ready yet)
 
 [Manuelle Instllation](./manuell_install.md)
 
