@@ -229,3 +229,8 @@ arch-chroot /mnt bootctl install --esp-path=/efi
 sync
 systemctl reboot --firmware-setup
 ```
+## ... und was jetzt?
+
+- https://wiki.archlinux.org/title/General_recommendations
+- https://github.com/SJ-Plan-B/Archlinux-Notes-By-xCesir/blob/main/README.md
+- https://wiki.archlinux.org/title/List_of_applications
