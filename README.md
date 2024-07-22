@@ -27,7 +27,7 @@ archinstall
 
 ### manuell install (not ready yet)
 
-[Manuelle Instllation](./manuell_install.md)
+[Manuelle Installation](./manuell_install.md)
 
  ### Archlinux installation Requirements, dass dieses Repo immer anwendbar ist:
  - Systemd-Boot
