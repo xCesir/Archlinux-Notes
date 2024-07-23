@@ -29,7 +29,7 @@ pacman -Rs package_name
 
 ## Pacman (Video Game Animation EasterEgg)
 
-add `ILoveCandy`under '# Misc options' in `/etc/pacman.conf`
+add `ILoveCandy` under `# Misc options` in `/etc/pacman.conf`
 
 ## AUR und yay
 
