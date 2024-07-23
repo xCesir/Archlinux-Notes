@@ -26,6 +26,11 @@ pacman -R package_name
 ````
 pacman -Rs package_name
 ````
+
+## Pacman (Video Game Animation EasterEgg)
+
+add `ILoveCandy`under '# Misc options' in `/etc/pacman.conf`
+
 ## AUR und yay
 
 Das ArchLinux User-Community Repository (AUR) ist eine Sammlung von Paketbau-Anleitungen (den PKGBUILDs) anhand derer Programmpakete für Arch Linux erstellt werden können.<br>
