@@ -38,3 +38,7 @@ sudo pacman -S qemu-guest-agent spice-vdagent
 sudo systemctl enable qemu-guest-agent
 sudo systemctl start qemu-guest-agent
 ```
+### Windows guest tools
+[virtio-win-guest-tools.exe](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/)
+[WinFSP](https://winfsp.dev)
+
