@@ -217,3 +217,11 @@ sudo pacman -S kitty
 
 Example [Config](./kittyconf.md)
 
+## [TTE](https://github.com/ChrisBuilds/terminaltexteffects)
+
+TerminalTextEffects (TTE) is a terminal visual effects engine, application, and Python library.
+
+```
+yay -S tte
+```
+
