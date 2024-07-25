@@ -22,7 +22,7 @@ sed -i 's/plugins=(git/plugins=(git\ zsh-autosuggestions/g' ~/.zshrc
 ```
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
 ```
-nach `source $ZSH/oh-my-zsh.sh` suche und in der Zeile davor `fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src` einfügen:
+nach `source $ZSH/oh-my-zsh.sh` suchen und in der Zeile davor `fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src` einfügen:
 
 ```
 sed -i 's/sourc\e \$ZSH\/oh-my-zsh.sh/fpath\+\=\$\{ZSH\_CUSTOM\:\-\$\{ZSH\:\-\~\/.oh\-my\-zsh\}\/custom\}\/plugins\/zsh-completions\/src\nsourc\e \$ZSH\/oh-my-zsh.sh/g' ~/.zshrc
