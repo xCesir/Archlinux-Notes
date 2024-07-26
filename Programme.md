@@ -209,6 +209,11 @@ curl https://secure.eicar.org/eicar.com.txt | clamscan -
 find /home/archie -type f -print0 | xargs -0 -P $(nproc) clamscan
 ```
 
+### refresh Database
+```
+freshclam
+```
+
 ## [Kitty Terminal](https://sw.kovidgoyal.net/kitty/)
 
 ```
