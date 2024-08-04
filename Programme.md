@@ -231,3 +231,6 @@ yay -S tte
 ```
 
 ## [locate](https://wiki.archlinux.org/title/Locate)
+
+
+## [figlet](https://man.archlinux.org/man/figlet.6.en)
