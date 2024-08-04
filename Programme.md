@@ -230,3 +230,4 @@ TerminalTextEffects (TTE) is a terminal visual effects engine, application, and 
 yay -S tte
 ```
 
+## [locate](https://wiki.archlinux.org/title/Locate)
