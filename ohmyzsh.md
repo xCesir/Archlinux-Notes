@@ -55,8 +55,14 @@ echo "source ${(q-)PWD}/powerlevel10k/powerlevel10k.zsh-theme" >> ${ZDOTDIR:-$HO
 exit
 ```
 ```
-sudo pacman -S nerd-fonts adobe-source-code-pro-fonts ttf-font-awesome powerline-fonts ttf-meslo-nerd 
+sudo pacman -S ttf-meslo-nerd
 ```
+
+### andere gute fonts
+```
+sudo pacman -S nerd-fonts adobe-source-code-pro-fonts ttf-font-awesome powerline-fonts 
+```
+
 #### [Recommended Font](https://github.com/romkatv/powerlevel10k/blob/master/font.md)
 ```
 yay -S ttf-meslo-nerd-font-powerlevel10k 
