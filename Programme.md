@@ -234,3 +234,8 @@ yay -S tte
 
 
 ## [figlet](https://man.archlinux.org/man/figlet.6.en)
+
+## MS Paint
+```
+sudo pacman -S kolourpaint
+```
