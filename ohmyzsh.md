@@ -20,12 +20,12 @@ sed -i 's/plugins=(git/plugins=(git\ zsh-autosuggestions/g' ~/.zshrc
 
 ### [zsh-completions](https://github.com/zsh-users/zsh-completions)
 ```
-git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
+% git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
 ```
-nach `source $ZSH/oh-my-zsh.sh` suchen und in der Zeile davor `fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src` einfügen:
 
+Add to ~/.zshrc:
 ```
-sed -i 's/sourc\e \$ZSH\/oh-my-zsh.sh/fpath\+\=\$\{ZSH\_CUSTOM\:\-\$\{ZSH\:\-\~\/.oh\-my\-zsh\}\/custom\}\/plugins\/zsh-completions\/src\nsourc\e \$ZSH\/oh-my-zsh.sh/g' ~/.zshrc
+source /path/to/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 ```
 
 Falls es nicht funktiniert ist ein Issue im Git verlinkt
