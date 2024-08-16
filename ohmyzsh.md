@@ -18,6 +18,16 @@ In `~/.zshrc` `zsh-autosuggestions` bei `plugins` einfügen bei:
 sed -i 's/plugins=(git/plugins=(git\ zsh-autosuggestions/g' ~/.zshrc
 ```
 
+### [zsh-completions](https://github.com/zsh-users/zsh-completions)
+```
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
+```
+nach `source $ZSH/oh-my-zsh.sh` suchen und in der Zeile davor `fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src` einfügen:
+
+```
+sed -i 's/sourc\e \$ZSH\/oh-my-zsh.sh/fpath\+\=\$\{ZSH\_CUSTOM\:\-\$\{ZSH\:\-\~\/.oh\-my\-zsh\}\/custom\}\/plugins\/zsh-completions\/src\nsourc\e \$ZSH\/oh-my-zsh.sh/g' ~/.zshrc
+```
+
 Falls es nicht funktiniert ist ein Issue im Git verlinkt
 
 ### [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
@@ -31,29 +41,12 @@ sed -i 's/plugins=(git/plugins=(git\ zsh-history-substring-search/g' ~/.zshrc
 ```
 exec zsh
 ```
-### [zsh-syntax-highlighting](https://github.com/marlonrichert/zsh-autocomplete)
+### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 ```
 cd ~/.oh-my-zsh/custom/plugins/
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 ```
-
-### [zsh-autocomplete](https://github.com/zsh-users/zsh-syntax-highlighting)
-```
-cd ~/.oh-my-zsh/custom/plugins/
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
-```
-
-### [zsh-fzf-history-search](https://github.com/joshskidmore/zsh-fzf-history-search)
-```
-git clone https://github.com/joshskidmore/zsh-fzf-history-search ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-fzf-history-search
-```
-In `~/.zshrc` `zsh-fzf-history-search` bei `plugins` einfügen bei:
-```
-sed -i 's/plugins=(git/plugins=(git\ zsh-fzf-history-search/g' ~/.zshrc
-```
-
 ### [powerlevel10k - theme](https://github.com/romkatv/powerlevel10k)
 ```
 cd ~/.oh-my-zsh/custom/themes/
@@ -95,14 +88,11 @@ popd
 pushd ~/.oh-my-zsh/custom/themes/powerlevel10k/
 git pull
 popd
-pushd ~/.oh-my-zsh/custom/plugins/plugins/zsh-fzf-history-search
 omz update
-git pull
-popd
 exec zsh
 ```
 ```
-sed -i 's/\#\ alias\ ohmyzsh\=\"mate\ \~\/.oh-my-zsh\"/\#\ alias\ ohmyzsh\=\"mate\ \~\/.oh-my-zsh\"\nalias\ fullomzupdate=\"\npushd\ ~\/.oh-my-zsh\/custom\/plugins\/zsh-autosuggestions\/\ngit\ pull\npopd\npushd\ ~\/.oh-my-zsh\/custom\/plugins\/zsh-completions\/\ngit\ pull\npopd\npushd\ ~\/.oh-my-zsh\/custom\/plugins\/zsh-history-substring-search\/\ngit\ pull\npopd\npushd\ ~\/.oh-my-zsh\/custom\/plugins\/zsh-syntax-highlighting\/\ngit\ pull\npopd\npushd\  ~\/.oh-my-zsh\/custom\/plugins\/zsh-fzf-history-search\/\ngit\ pull\npopd\npushd\ ~\/.oh-my-zsh\/custom\/themes\/powerlevel10k\/\ngit\ pull\npopd\nomz\ update\nexec\ zsh\n"/g' .zshrc
+sed -i 's/\#\ alias\ ohmyzsh\=\"mate\ \~\/.oh-my-zsh\"/\#\ alias\ ohmyzsh\=\"mate\ \~\/.oh-my-zsh\"\nalias\ fullomzupdate=\"\npushd\ ~\/.oh-my-zsh\/custom\/plugins\/zsh-autosuggestions\/\ngit\ pull\npopd\npushd\ ~\/.oh-my-zsh\/custom\/plugins\/zsh-completions\/\ngit\ pull\npopd\npushd\ ~\/.oh-my-zsh\/custom\/plugins\/zsh-history-substring-search\/\ngit\ pull\npopd\npushd\ ~\/.oh-my-zsh\/custom\/plugins\/zsh-syntax-highlighting\/\ngit\ pull\npopd\npushd\ ~\/.oh-my-zsh\/custom\/themes\/powerlevel10k\/\ngit\ pull\npopd\nomz\ update\nexec\ zsh\n"/g' .zshrc
 ```
 
 ## Pacman (was möglich ist; not recommended)
