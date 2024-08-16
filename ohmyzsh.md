@@ -41,12 +41,20 @@ sed -i 's/plugins=(git/plugins=(git\ zsh-history-substring-search/g' ~/.zshrc
 ```
 exec zsh
 ```
-### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+### [zsh-syntax-highlighting](https://github.com/marlonrichert/zsh-autocomplete)
 ```
 cd ~/.oh-my-zsh/custom/plugins/
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 ```
+
+### [zsh-autocomplete](https://github.com/zsh-users/zsh-syntax-highlighting)
+```
+cd ~/.oh-my-zsh/custom/plugins/
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+```
+
 ### [powerlevel10k - theme](https://github.com/romkatv/powerlevel10k)
 ```
 cd ~/.oh-my-zsh/custom/themes/
