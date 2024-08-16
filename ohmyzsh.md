@@ -48,8 +48,6 @@ echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> 
 ### [zsh-fzf-history-search](https://github.com/joshskidmore/zsh-fzf-history-search)
 ```
 git clone https://github.com/joshskidmore/zsh-fzf-history-search ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-fzf-history-search
-
-plugins=(… zsh-fzf-history-search)
 ```
 In `~/.zshrc` `zsh-fzf-history-search` bei `plugins` einfügen bei:
 ```
