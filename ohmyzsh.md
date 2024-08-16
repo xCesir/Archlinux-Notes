@@ -25,7 +25,7 @@ sed -i 's/plugins=(git/plugins=(git\ zsh-autosuggestions/g' ~/.zshrc
 
 Add to ~/.zshrc:
 ```
-source /path/to/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 ```
 
 Falls es nicht funktiniert ist ein Issue im Git verlinkt
