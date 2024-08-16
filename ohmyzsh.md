@@ -18,16 +18,6 @@ In `~/.zshrc` `zsh-autosuggestions` bei `plugins` einfügen bei:
 sed -i 's/plugins=(git/plugins=(git\ zsh-autosuggestions/g' ~/.zshrc
 ```
 
-### [zsh-completions](https://github.com/zsh-users/zsh-completions)
-```
-% git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
-```
-
-Add to ~/.zshrc:
-```
-source ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-```
-
 Falls es nicht funktiniert ist ein Issue im Git verlinkt
 
 ### [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
