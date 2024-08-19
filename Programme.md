@@ -239,3 +239,9 @@ yay -S tte
 ```
 sudo pacman -S kolourpaint
 ```
+
+## Dolphin
+### optional
+```
+sudo pacman -S kimageformats shared-mime-info libavif ffmpegthumbs kde-cli-tools kdegraphics-thumbnailers kdenetwork-filesharing kio-admin purpose konsole
+```
