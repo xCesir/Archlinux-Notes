@@ -203,6 +203,10 @@ sudo systemctl enable clamav-daemon.service
 sudo systemctl start clamav-daemon.service
 curl https://secure.eicar.org/eicar.com.txt | clamscan -                                                                                                                                                   
 ```
+Wenn man den Service nicht permanent im Hintergrund laufen haben möchte:
+```
+sudo systemctl start clamav-freshclam.service; sudo systemctl start --now clamav-daemon.service;sudo freshclam; find /home/archie -type f -print0 | xargs -0 -P $(nproc) clamscan; sudo systemctl stop --now clamav-daemon.socket; sudo systemctl stop --now clamav-daemon.service; sudo systemctl stop clamav-freshclam.service
+```
 
 ### exmaple scan
 ```
@@ -244,4 +248,10 @@ sudo pacman -S kolourpaint
 ### optional
 ```
 sudo pacman -S kimageformats shared-mime-info libavif ffmpegthumbs kde-cli-tools kdegraphics-thumbnailers kdenetwork-filesharing kio-admin purpose konsole
+```
+
+## dust
+A more intuitive version of du in rust
+```
+sudo pacman -Ss dust
 ```
