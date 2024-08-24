@@ -2,7 +2,7 @@
   "layer": "top", "position": "top",
   "modules-left": ["group/power", "clock", "group/motherboard", "hyprland/window",],
   "modules-center": [  "hyprland/workspaces" ],
-  "modules-right": ["tray", "privacy", "custom/clipboard", "idle_inhibitor", "group/audio", "group/laptop", "network", "custom/notification",],
+  "modules-right": ["tray", "privacy", "custom/clipboard", "idle_inhibitor", "group/audio", "group/laptop", "network",  "custom/notification",],
   "reload_style_on_change":true,
 
   "custom/logo": {
@@ -62,7 +62,7 @@
 
 "network": {
       "format-wifi": " ",
-      "format-ethernet":" ",
+      "format-ethernet":"🖧 ",
       "format-disconnected": "",
       "tooltip-format": "{ipaddr}",
       "tooltip-format-wifi": "{essid} ({signalStrength}%)  | {ipaddr}",
@@ -151,7 +151,7 @@
 },
 
     "pulseaudio": {
-    "format": "{icon}  {volume}%",
+    "format": "{icon}   {volume} %",
     "format-bluetooth": "{icon} 󰂰  {volume}%",
     "format-muted": "󰖁",
     "format-icons": {
