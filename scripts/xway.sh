@@ -1,7 +1,7 @@
 #!/bin/bash
-if [ $XDG_CURRENT_DESKTOP = GNOME ]
+if [ $XDG_CURRENT_DESKTOP = GNOME ] || [ $XDG_CURRENT_DESKTOP = COSMIC ]
 then 
-	pkill xwaylandvideobr
+	pkill "xwaylandvideobr"
 else
 	echo "Process not found"
 fi
