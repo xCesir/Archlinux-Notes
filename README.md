@@ -79,7 +79,12 @@ archinstall
 
 [Qemu](./Qemu.md)
 
+## steam
+
+[steam](./steam.md)
+
 ## Virt-Manager
+
 [Virt-Manager](./virt-manager.md)
 
 ## Yubikey
@@ -94,7 +99,6 @@ archinstall
 
 ## Hyprland
 [Hyprland](./Hyprland.md)
-
 
 ## Neovim
 
