@@ -31,6 +31,17 @@ pacman -Rs package_name
 
 add `ILoveCandy` under `# Misc options` in `/etc/pacman.conf`
 
+## Get all missing optional dependencies
+```
+pacman -Q > /tmp/paccache
+for pkg in $(awk '{print $1}' /tmp/paccache); do
+  pacman -Qi $pkg | grep "^Optional Deps" | grep -v None > /dev/null && echo $pkg >> /tmp/hasdeps;
+done
+for pkg in $(awk '{print $1}' /tmp/hasdeps); do
+  pacman -Qi $pkg 2>/dev/null | grep "Optional Deps" | sed '/^Required/q' | grep -v installed;
+done | grep -v "___ ___" | sed -e 's/Optional Deps/ /' -e 's/___//' -e 's/ \+/ /g'
+```
+
 ## AUR und yay
 
 Das ArchLinux User-Community Repository (AUR) ist eine Sammlung von Paketbau-Anleitungen (den PKGBUILDs) anhand derer Programmpakete für Arch Linux erstellt werden können.<br>
