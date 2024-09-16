@@ -255,3 +255,9 @@ A more intuitive version of du in rust
 ```
 sudo pacman -S dust
 ```
+
+## gameconqueror
+Memory scanner designed to isolate the address of an arbitrary variable in an executing process (gtk GUI)
+```
+sudo pacman -S gameconqueror
+```
