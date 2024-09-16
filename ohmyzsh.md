@@ -15,7 +15,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 In `~/.zshrc` `zsh-autosuggestions` bei `plugins` einfügen bei:
 
 ```
-sed -i 's/plugins=(git\ plugins=(git\ zsh-autosuggestions/g' ~/.zshrc
+sed -i 's/plugins=(git/plugins=(git\ zsh-autosuggestions/g' ~/.zshrc 
 ```
 
 ### [zsh-completions](https://github.com/zsh-users/zsh-completions)
