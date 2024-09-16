@@ -247,11 +247,11 @@ sudo pacman -S kolourpaint
 ## Dolphin
 ### optional
 ```
-sudo pacman -S kimageformats shared-mime-info libavif ffmpegthumbs kde-cli-tools kdegraphics-thumbnailers kdenetwork-filesharing kio-admin purpose konsole
+sudo pacman -S --asdeps kimageformats shared-mime-info libavif ffmpegthumbs kde-cli-tools kdegraphics-thumbnailers kdenetwork-filesharing kio-admin purpose konsole
 ```
 
 ## dust
 A more intuitive version of du in rust
 ```
-sudo pacman -Ss dust
+sudo pacman -S dust
 ```
