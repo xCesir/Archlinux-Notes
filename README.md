@@ -9,7 +9,6 @@ Warum ist das Repo privat?
 Aufgrund von Lizenz Konflikten.
 
 ## to do:
-- Pop-Shell
 - Kitty-Terminal inline char für [Halftone](https://en.wikipedia.org/wiki/Halftone)
 - weniger Denglish
 
