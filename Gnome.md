@@ -2,9 +2,7 @@
 
 ## [Custom Wallpaper](https://www.debugpoint.com/custom-light-dark-wallpaper-gnome/)
 
-## Forge (Tilling WM)
-
-### Forge Troubleschooting
+## [Pop-Shell](https://www.bing.com/search?&q=pop+shell+shorcuts) (Tilling WM)
 
 #### mpv is not tilling properly
 
