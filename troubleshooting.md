@@ -4,13 +4,12 @@
 Mit dem letzten Update von UFW wird der Internet Verkehr von libvirt, welcher für virtuelle Maschinen notwendig ist, gestört.
 Die bisherige Lösung ist es bei der [Firewall](./Firewall.md) von `UFW` zu `Firewalld` zu wechseln.
 
-## Flatpak & Flathub
+## Flatpak
 
 Aktuell gibt es ein Issue mit ostree, das dazu führt, dass Flathub und Flatpaks selber unbenutzbar sind, **nicht updaten**.
 https://github.com/ostreedev/ostree/issues/3299
 https://bugs.gentoo.org/939813
 https://github.com/flatpak/flatpak/issues/5926 
-
 
 ## Kleopatra
 Akutell kann es dazu kommen, dass Kleopatra nicht startet nach den letzten Update wie in diesem [Forum-Post](https://bbs.archlinux.org/viewtopic.php?id=296219) beschrieben.
