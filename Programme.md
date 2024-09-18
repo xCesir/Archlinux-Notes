@@ -55,6 +55,11 @@ Gegen Tracking
 
 wie Neofetch aber mit mehr Informationen
 
+You can get this system information tool to output everything it can gather by using the command below.
+```
+fastfetch -c all.jsonc
+```
+
 ## Gnome Extension Manager
 
 https://flathub.org/apps/com.mattjakeman.ExtensionManager
