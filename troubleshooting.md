@@ -48,3 +48,8 @@ Seems that the default policy is to have it read/set directly from the bios, but
 ````
 yay -S mkinitcpio-firmware
 ````
+
+# AppImage require FUSE to run
+```
+sudo pacman -S fuse2
+```
