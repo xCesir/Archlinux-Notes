@@ -98,3 +98,9 @@ yay -R package_name
 ````
 yay -Rs package_name
 ````
+
+## Merge folder
+```
+rsync -avh source destination
+```
+
