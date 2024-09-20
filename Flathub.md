@@ -15,3 +15,6 @@ Stellt viele Pakete für andere Flathub Pakete Bereit wie z.B. MangoHUD oder str
 ### [Identity](https://flathub.org/apps/org.gnome.gitlab.YaLTeR.Identity)
 
 Identity ist ein Programm zum vergleichen von Photos und Videos.
+
+### Switcheroo
+Convert between different image filetypes and resize them easily. 
