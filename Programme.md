@@ -266,3 +266,5 @@ Memory scanner designed to isolate the address of an arbitrary variable in an ex
 ```
 sudo pacman -S gameconqueror
 ```
+## usbguard
+Software framework for implementing USB device authorization policies
