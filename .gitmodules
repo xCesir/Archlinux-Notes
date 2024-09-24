@@ -1,3 +1,6 @@
 [submodule "yubikey-full-disk-encryption"]
 	path = yubikey-full-disk-encryption
 	url = https://github.com/agherzan/yubikey-full-disk-encryption
+[submodule "kickstart.nvim"]
+	path = kickstart.nvim
+	url = https://github.com/nvim-lua/kickstart.nvim
