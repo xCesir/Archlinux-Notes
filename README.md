@@ -18,7 +18,8 @@ Aufgrund von Lizenz Konflikten.
 
 ## Update
 
-Aktuell gibt es ein Issue mit ostree, das dazu führt, dass Flathub und Flatpaks selber unbenutzbar sind, **nicht updaten**. [see](./troubleshooting.md#Flatpak)
+/
+
 ## Installation
 
 ### guided install

@@ -2,7 +2,7 @@
 
 ## Motherboard
 
-enable IOMMU and related
+`IOMMU` (in diesem Fall ist die häufig gleichnamige Einstellung von UEFI/BIOS gemeint) und `ACS override` für weitere Information: [Archiwiki](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Setting_up_IOMMU)
 
 ## Loading vfio-pci early
 
