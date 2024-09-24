@@ -112,4 +112,4 @@ archinstall
 
 ## [Yubikey Disk Encryption](https://github.com/agherzan/yubikey-full-disk-encryption)
 
-[Yubikey Disk Encryption](./YubikeyDiskEncryption.md) 
+[Yubikey Disk Encryption](./yubikey-full-disk-encryption/README.md) 
