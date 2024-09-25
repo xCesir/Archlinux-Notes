@@ -18,3 +18,7 @@ Identity ist ein Programm zum vergleichen von Photos und Videos.
 
 ### Switcheroo
 Convert between different image filetypes and resize them easily. 
+
+### Speech Note
+[Github](https://github.com/mkiol/dsnote)
+
