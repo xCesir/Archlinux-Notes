@@ -9,3 +9,13 @@
 ```
 echo "no-keepaspect-window" >> ~/.config/mpv/mpv.conf
 ```
+
+## sound volume overamplification
+enable:
+```
+gsettings set org.gnome.desktop.sound allow-volume-above-100-percent 'true' 
+```
+disable:
+```
+gsettings set org.gnome.desktop.sound allow-volume-above-100-percent 'false' 
+```
