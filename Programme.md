@@ -268,3 +268,11 @@ sudo pacman -S gameconqueror
 ```
 ## usbguard
 Software framework for implementing USB device authorization policies
+
+## scrcpy
+Display and control your Android device
+
+[Github](https://github.com/Genymobile/scrcpy/tree/master)
+```
+sudo pacman -S scrcpy
+```
