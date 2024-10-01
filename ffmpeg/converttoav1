@@ -1,0 +1,14 @@
+search_dir=/path/to/folder
+for entry in "$search_dir"*.mp4
+do
+  echo "$entry"
+  basename=$(basename -- "$entry")
+  extension="_av1_2.mkv"
+  new=$basename$extension
+  fullnew=$search_dir$new
+  test=$(mediainfo "$entry" | grep "bit rate" | grep --extended-regexp -oh "([0-9]+[[:blank:]])*" | sed 's/ //g') 
+  test=$(($test * "6/10"))
+  echo $test
+  echo $fullnew
+  $(ffmpeg -hwaccel vaapi -hwaccel_device /dev/dri/renderD128 -hwaccel_output_format vaapi -i "$entry" -c:v av1_vaapi -profile:a 2 -tier 1 -b:v "$test"k "$fullnew")
+done
