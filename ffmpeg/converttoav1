@@ -1,4 +1,4 @@
-search_dir=/path/to/folder
+search_dir=/path/to/folder/
 for entry in "$search_dir"*.mp4
 do
   echo "$entry"
@@ -6,7 +6,7 @@ do
   extension="_av1_2.mkv"
   new=$basename$extension
   fullnew=$search_dir$new
-  test=$(mediainfo "$entry" | grep "bit rate" | grep --extended-regexp -oh "([0-9]+[[:blank:]])*" | sed 's/ //g') 
+  test=$(mediainfo "$entry" | grep "Overall bit rate  " | grep --extended-regexp -oh "([0-9]+[[:blank:]])*" | sed 's/ //g') 
   test=$(($test * "6/10"))
   echo $test
   echo $fullnew
