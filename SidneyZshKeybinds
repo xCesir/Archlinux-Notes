@@ -1,12 +1,14 @@
-alias clamscan-folder="sudo systemctl start clamav-freshclam.service; sudo systemctl start --now clamav-daemon.service;sudo freshclam; find /home/archie -type f -print0 | xargs -0 -P $(nproc) clamscan; sudo systemctl stop --now clamav-daemon.socket; sudo systemctl stop --now clamav-daemon.service; sudo systemctl stop clamav-freshclam.service"
+alias clamscan-folder="sudo systemctl start clamav-freshclam.service; sudo systemctl start --now clamav-daemon.service;sudo freshclam; find ./ -type f -print0 | xargs -0 -P $(nproc) clamscan; sudo systemctl stop --now clamav-daemon.socket; sudo systemctl stop --now clamav-daemon.service; sudo systemctl stop clamav-freshclam.service"
 alias f="fuck"
 alias .="l"
 alias c="clear"
 alias :q="exit"
 alias x="exit"
 alias jailfox="firejail --private --dns=9.9.9.9 --dns=1.1.1.1 firefox -no-remote"
+alias jailtop="firejail --apparmor --noprofile vesktop >> /dev/null 2> /dev/null& disown"
+alias jailvaldi="firejail --apparmor vivaldi >> /dev/null 2> /dev/null& disown"
 alias fzf-preview="fzf --preview 'bat --color=always {}'"
-alias up="sudo snap refresh;flatpak update;yay -Syu;fullomzupdate"
+alias up="sudo snap refresh;flatpak update;nvimpluginsupdate;yay -Syu;fullomzupdate"
 alias fullomzupdate="
 pushd ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/
 git pull
@@ -26,3 +28,5 @@ popd
 omz update
 exec zsh
 "
+alias nvimpluginsupdate='nvim --headless "+Lazy! sync" +qa; nvim --headless "+MasonToolsUpdateSync" +qa'
+alias fzf-preview="fzf --preview 'bat --color=always {}'"
