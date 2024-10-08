@@ -31,7 +31,7 @@ pacman -Rs package_name
 
 add `ILoveCandy` under `# Misc options` in `/etc/pacman.conf`
 
-## Install all optional dependencies (not recommended)
+## Install all optional dependencies (not working correctly)
 ```
 while IFS= read -r line; do
   if pacman -Qs $line > /dev/null ; then
