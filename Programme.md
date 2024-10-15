@@ -276,3 +276,28 @@ Display and control your Android device
 ```
 sudo pacman -S scrcpy
 ```
+
+##[coolercontrol](https://gitlab.com/coolercontrol/coolercontrol/)
+### Prereq.
+'y' for all
+```
+sudo pwmconfig 
+```
+'YES' for all
+```
+sudo sensors-detect 
+```
+
+Use your installed AUR Helper, i.e.:
+```
+# binary package
+yay -S coolercontrol-bin
+
+# source package
+yay -S coolercontrol
+```
+
+Then enable and start the systemd service:
+```
+sudo systemctl enable --now coolercontrold
+```
