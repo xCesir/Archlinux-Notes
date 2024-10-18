@@ -10,6 +10,9 @@ Die Lösung ist es via Console mit folgendem Befehl zu starten:
 ````
 export QT_QPA_PLATFORM=XCB && kleopatra
 ````
+oder permanente variable setzen
+`QT_QPA_PLATFORM=xcb` in `~/.zshenv`
+
 https://bbs.archlinux.org/viewtopic.php?id=296219
 https://bugs.gentoo.org/933441
 
