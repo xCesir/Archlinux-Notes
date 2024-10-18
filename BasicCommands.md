@@ -103,4 +103,4 @@ yay -Rs package_name
 ```
 rsync -avh source destination
 ```
-
+## [Snap](https://snapcraft.io/docs/installing-snap-on-arch-linux)
