@@ -277,7 +277,7 @@ Display and control your Android device
 sudo pacman -S scrcpy
 ```
 
-##[coolercontrol](https://gitlab.com/coolercontrol/coolercontrol/)
+## [coolercontrol](https://gitlab.com/coolercontrol/coolercontrol/)
 ### Prereq.
 'y' for all
 ```
@@ -285,6 +285,9 @@ sudo pwmconfig
 ```
 'YES' for all
 ```
+sudo pacman -S  i2c-tools
+sudo modprobe i2c_dev
+sudo modprobe at24
 sudo sensors-detect 
 ```
 
@@ -293,7 +296,7 @@ Use your installed AUR Helper, i.e.:
 # binary package
 yay -S coolercontrol-bin
 
-# source package
+# source packag
 yay -S coolercontrol
 ```
 
