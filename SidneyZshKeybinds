@@ -1,5 +1,5 @@
 alias clamscan-folder="sudo systemctl start clamav-freshclam.service; sudo systemctl start --now clamav-daemon.service;sudo freshclam; find ./ -type f -print0 | xargs -0 -P $(nproc) clamscan; sudo systemctl stop --now clamav-daemon.socket; sudo systemctl stop --now clamav-daemon.service; sudo systemctl stop clamav-freshclam.service"
-alias cp+='rsync -ah --progress'
+alias cp="rsync -ah --progress"
 alias f="fuck"
 alias .="l"
 alias c="clear"
