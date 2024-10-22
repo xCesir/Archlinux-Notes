@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=MyScript
+Name=kill_nm-applet
 GenericName=A descriptive name
 Comment=Some description about your script
 Exec=/home/sidney/Documents/scripts/nm-applet.sh
