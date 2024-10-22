@@ -1,5 +1,8 @@
 # troubleshooting
 
+## Schwarz Box um Gnome 47 Apps mit amdvlk driver
+`GSK_RENDERER=ngl` in `/etc/environment`
+
 ## Kein Internet virtuelle Maschinen
 Mit dem letzten Update von UFW wird der Internet Verkehr von libvirt, welcher für virtuelle Maschinen notwendig ist, gestört.
 Die bisherige Lösung ist es bei der [Firewall](./Firewall.md) von `UFW` zu `Firewalld` zu wechseln.
