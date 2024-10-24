@@ -304,3 +304,9 @@ Then enable and start the systemd service:
 ```
 sudo systemctl enable --now coolercontrold
 ```
+
+## glow
+Command-line markdown renderer
+```
+sudo pacman -Ss glow
+```
