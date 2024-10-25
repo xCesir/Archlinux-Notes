@@ -308,5 +308,11 @@ sudo systemctl enable --now coolercontrold
 ## glow
 Command-line markdown renderer
 ```
-sudo pacman -Ss glow
+sudo pacman -S glow
+```
+
+## diff-so-fancy
+Good-looking diffs with diff-highlight and more
+```
+sudo pacman -S diff-so-fancy
 ```
