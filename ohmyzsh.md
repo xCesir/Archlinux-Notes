@@ -161,6 +161,9 @@ fastfetch --logo arch2
 sed -i '1 i\sleep\ 0.2\nfastfetch\ --logo\ arch2' ~/.zshrc
 ```
 
+## omz plugins
+colored-man-pages
+
 ## root
 Für Root bietet sich eher ein "basic approach" an, um etwaige Fehler zu vermeiden.
 1. Login to root
