@@ -322,3 +322,9 @@ Linux Advanced Power Management
 ```
 sudo pacman -S tlp tlp-rdw
 ```
+
+## imv
+mpv like image viewer
+```
+sudo pacman -S imv
+```
