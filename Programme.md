@@ -316,3 +316,9 @@ Good-looking diffs with diff-highlight and more
 ```
 sudo pacman -S diff-so-fancy
 ```
+
+## tlp
+Linux Advanced Power Management
+```
+sudo pacman -S tlp tlp-rdw
+```
