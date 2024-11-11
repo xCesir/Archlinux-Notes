@@ -40,6 +40,7 @@ do
       #$(ffmpeg -hwaccel vaapi -hwaccel_device /dev/dri/renderD128 -hwaccel_output_format vaapi -i "$entry" -vf 'format=nv12,hwupload' av1_amf -usage 5 -quality 0 -preset 0 -latency 3 -b:v "$test"k "$fullnew")
   else
     echo Error
+    return null
   fi
  echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
  echo
