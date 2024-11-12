@@ -10,7 +10,7 @@ do
   compression="100/100" #
   if [ "$(mediainfo "$entry" | grep "Codec ID/Info" | grep "High Efficiency Video Coding" -o)" = "High Efficiency Video Coding" ] # check if format is HEVC
     then
-      compression="30/100"
+      compression="70/100"
   elif [ "$(mediainfo "$entry" | grep "Codec ID/Info"  | grep "Advanced Video Coding" -o)" = "Advanced Video Coding" ] # check if format is AVC
     then
     compression="55/100"
