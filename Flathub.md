@@ -22,3 +22,12 @@ Convert between different image filetypes and resize them easily.
 ### Speech Note
 [Github](https://github.com/mkiol/dsnote)
 
+### Gnome Extension Manager
+
+https://flathub.org/apps/com.mattjakeman.ExtensionManager
+
+### Master PDF Editor
+Ein PDF Editor (selbstrechnender Charakterbogen für DSA5 [Das schwarze Auge])
+
+### Decibels
+Ein Audio Player

@@ -60,15 +60,6 @@ You can get this system information tool to output everything it can gather by u
 fastfetch -c all.jsonc
 ```
 
-## Gnome Extension Manager
-
-https://flathub.org/apps/com.mattjakeman.ExtensionManager
-
-## GDM-Settings
-
-https://aur.archlinux.org/packages/gdm-settings
-
-
 ## firejail
 
 ### setup
@@ -149,6 +140,11 @@ thefuck
 fuck
 fuck
 ````
+
+## GDM-Settings
+
+https://aur.archlinux.org/packages/gdm-settings
+
 
 ## Update Device Firmware
 [Archwiki](https://wiki.archlinux.org/title/Fwupd#Usage)
