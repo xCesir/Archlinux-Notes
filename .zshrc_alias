@@ -30,5 +30,7 @@ popd
 omz update
 exec zsh
 "
+alias iicd="VK_DRIVER_FILES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json:/usr/share/vulkan/icd.d/intel_icd.i686.json"
+alias rnbg="> /dev/null 2> /dev/null&disown"
 alias nvimpluginsupdate='nvim --headless "+Lazy! sync" +qa; nvim --headless "+MasonToolsUpdateSync" +qa'
 alias fzf-preview="fzf --preview 'bat --color=always {}'"
