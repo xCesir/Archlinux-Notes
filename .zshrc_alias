@@ -11,6 +11,7 @@ alias jailtop="firejail --apparmor --noprofile vesktop >> /dev/null 2> /dev/null
 alias jailvaldi="firejail --apparmor vivaldi >> /dev/null 2> /dev/null& disown"
 alias fzf-preview="fzf --preview 'bat --color=always {}'"
 alias up="sudo snap refresh;flatpak update;nvimpluginsupdate;yay -Syu;fullomzupdate"
+alias updaq="sudo snap refresh;flatpak update -y;nvimpluginsupdate;yay -Syu --noconfirm;fullomzupdate"
 alias fullomzupdate="
 pushd ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/
 git pull
