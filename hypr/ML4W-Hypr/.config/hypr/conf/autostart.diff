@@ -1,0 +1,16 @@
+20,21c20,21
+< # Load cliphist history
+< exec-once = wl-paste --watch cliphist store
+---
+> # Load copyq server
+> exec-once = copyq --start-server
+33a34,42
+> 
+> # Autostart CoreCtrl 
+> exec-once = corectrl &
+> 
+> # Autostart Nextcloud
+> exec-once = nextcloud &
+> 
+> # Autostart coolercontrol 
+> exec-once = coolercontrol &

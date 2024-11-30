@@ -1,0 +1,38 @@
+325a326,335
+> 
+>   // Group Links
+>   "group/audio": {
+>     "orientation": "horizontal",
+>     "modules": [
+>       "pulseaudio",
+>       "pulseaudio#microphone",
+>     ]
+>   },
+> 
+332,334c342
+<     "format-muted": " {format_source}",
+<     "format-source": "{volume}% ",
+<     "format-source-muted": "",
+---
+>     "format-muted": "  {volume}%",
+344c352,356
+<     "on-click": "pavucontrol"
+---
+>         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+>         "on-click-right": "/usr/bin/pavucontrol -t 3",
+>         "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1%",
+>         "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1%",
+> 	"tooltip-format": "{icon} {desc} | {volume}%",
+345a358,369
+> 
+> "pulseaudio#microphone": {
+>     "format": "{format_source}",
+>     "format-source": " {volume}%",
+>     "format-source-muted": "",
+>     "on-click": "pavucontrol -t 4",
+>         "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+>         "on-click-right": "/usr/bin/pavucontrol -t 4",
+>         "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -1%",
+>         "on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +1%",
+>     "scroll-step": 5,
+> },
