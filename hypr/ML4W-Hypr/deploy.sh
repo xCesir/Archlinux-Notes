@@ -64,6 +64,17 @@ else
 	echo "N"
 fi
 
+IS="$(diff ~/.config/waybar/themes/ml4w/style.css ./.config/waybar/themes/ml4w/style.css)"
+EXPECTED=$(<./.config/waybar/themes/ml4w/style.diff)
+DIFF="$(diff <(echo "$IS") <(echo "$EXPECTED"))"
+echo "$DIFF"
+if [ "$DIFF" == "" ]; then
+	echo "Y"
+	cp -v ./.config/waybar/themes/ml4w/style.css ~/.config/waybar/themes/ml4w/style.css
+else
+	echo "N"
+fi
+
 IS="$(diff ~/.config/waybar/modules.json ./.config/waybar/modules.json)"
 EXPECTED=$(<./.config/waybar/modules.diff)
 DIFF="$(diff <(echo "$IS") <(echo "$EXPECTED"))"

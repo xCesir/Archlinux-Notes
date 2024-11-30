@@ -16,6 +16,7 @@
     "margin-left": 14,
     "margin-right": 14,    
     "spacing": 0,
+    "output": "DP-1",
 
     // Load Modules
     "include": [
@@ -41,6 +42,7 @@
 
     // Modules Right    
     "modules-right": [
+	"privacy",
         "custom/updates",
         "group/audio",
 //"backlight",
