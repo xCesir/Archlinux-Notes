@@ -22,3 +22,8 @@ ml4w-hyprland-setup
 to apply my custom edits
 run [backup.sh](./hypr/ML4W-Hypr/backup.sh) and then [deploy.sh](./hypr/ML4W-Hypr/deploy.sh)
 
+## Troubleshooting
+If Games cannot initialize SDL use:
+```
+env -u SDL_VIDEODRIVER %command%
+```
