@@ -29,7 +29,8 @@ replace_in_keybinds = [
     "bind = $mainMod, R, exec, pkill rofi || rofi -show drun -replace -i # Open application launcher",
     "bind = $mainMod, V, exec, copyq show # Open clipboard manager",
     "bind = $mainMod, K, swapsplit # Swapsplit\n\n# Move Window with mainMod + shift +arrow\nbind = $mainMod SHIFT, up, movewindow, u\nbind = $mainMod SHIFT, down, movewindow, d\nbind = $mainMod SHIFT, left, movewindow, l\nbind = $mainMod SHIFT, right, movewindow, r\n",
-    "bind = $mainMod CTRL, C, exec, ~/.config/ml4w/settings/calculator.sh # Open the calculator\nbind = $mainMod, M, exec, pactl set-source-mute @DEFAULT_SOURCE@ toggle # Toggle microphone",
+    'bind = $mainMod CTRL, C, exec, ~/.config/ml4w/settings/calculator.sh # Open the calculator\nbind = $mainMod, M, exec, pactl set-source-mute @DEFAULT_SOURCE@ toggle # Toggle microphone,\nbind = $mainMod, M, exec, dunstify "$(if [ "$(pactl get-source-mute @DEFAULT_SOURCE@)" = "Mute: no" ]; then echo Microphone muted; else echo Microphone unmuted; fi)"'
+
 ]
 
 for i in range(len(find_in_keybinds)):
