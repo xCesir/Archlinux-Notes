@@ -88,7 +88,7 @@ for i in range(len(find_in_system_monitor)):
         file.close()
 
 find_in_config = [
-    '"spacing": 0',
+    '"spacing": 0,',
     '"custom/updates",',
     '"pulseaudio",',
 ]
