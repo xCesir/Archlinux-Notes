@@ -147,3 +147,18 @@ for i in range(len(find_in_module)):
             line = line.replace(find_in_module[i], replace_in_module[i])
             file.write(line)
         file.close()
+
+find_in_module = [
+    "monitor = 0",
+]
+
+replace_in_module = [
+    "monitor = DP-1",
+]
+
+for i in range(len(find_in_module)):
+    with in_place.InPlace('/home/sidney/dotfiles/.config/dunst/dunstrc') as file:
+        for line in file:
+            line = line.replace(find_in_module[i], replace_in_module[i])
+            file.write(line)
+        file.close()

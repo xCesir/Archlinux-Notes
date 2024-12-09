@@ -1,8 +1,0 @@
-18a19
->     "output": "DP-1",
-43a45
-> 	"privacy",
-45c47
-<         "pulseaudio",
----
->         "group/audio",
