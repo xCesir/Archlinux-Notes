@@ -1,0 +1,33 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/mapper/ainstnvme2n1p2
+UUID=e4487828-4b6e-4dab-a2bb-13eb1cc6cf2d	/         	btrfs     	rw,relatime,compress=zstd:3,ssd,space_cache=v2,subvolid=256,subvol=/@	0 0
+
+# /dev/mapper/ainstnvme2n1p2
+UUID=e4487828-4b6e-4dab-a2bb-13eb1cc6cf2d	/home     	btrfs     	rw,relatime,compress=zstd:3,ssd,space_cache=v2,subvolid=257,subvol=/@home	0 0
+
+# /dev/mapper/ainstnvme2n1p2
+UUID=e4487828-4b6e-4dab-a2bb-13eb1cc6cf2d	/var/log  	btrfs     	rw,relatime,compress=zstd:3,ssd,space_cache=v2,subvolid=258,subvol=/@log	0 0
+
+# /dev/mapper/ainstnvme2n1p2
+UUID=e4487828-4b6e-4dab-a2bb-13eb1cc6cf2d	/var/cache/pacman/pkg	btrfs     	rw,relatime,compress=zstd:3,ssd,space_cache=v2,subvolid=259,subvol=/@pkg	0 0
+
+# /dev/mapper/ainstnvme2n1p2
+UUID=e4487828-4b6e-4dab-a2bb-13eb1cc6cf2d	/.snapshots	btrfs     	rw,relatime,compress=zstd:3,ssd,space_cache=v2,subvolid=260,subvol=/@.snapshots	0 0
+
+# /dev/nvme2n1p1
+UUID=E500-DA9B      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# Gaming
+UUID=95b34213-100c-4dbc-90c9-83160a352a4e	/run/media/sidney/Gaming	btrfs	defaults	0	0
+
+# VM
+UUID=f45a58fb-4d4c-4705-ba6a-5e018276ee7b	/run/media/sidney/VM	btrfs	defaults	0	0
+
+# HHD
+UUID=79649ebd-d6fb-4ee3-ba9d-a00243877874	/run/media/sidney/HDD	btrfs	defaults	0	0
+
+# HWW
+UUID=9f68e6a3-b6bb-43c0-81a8-daab6eb26cf6	/run/media/sidney/HWW	btrfs	defaults	0	0

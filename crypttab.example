@@ -1,0 +1,24 @@
+# Configuration for encrypted block devices.
+# See crypttab(5) for details.
+
+# NOTE: Do not list your root (/) partition here, it must be set up
+#       beforehand by the initramfs (/etc/mkinitcpio.conf).
+
+# <name>       <device>                                     <password>              <options>
+# home         UUID=b8ad5c18-f445-495d-9095-c9ec4f9d2f37    /etc/mypassword1
+# data1        /dev/sda3                                    /etc/mypassword2
+# data2        /dev/sda5                                    /etc/cryptfs.key
+# swap         /dev/sdx4                                    /dev/urandom            swap,cipher=aes-cbc-essiv:sha256,size=256
+# vol          /dev/sdb7                                    none
+
+# Gaming
+Gaming	UUID=5256cc5a-0a44-478c-b6be-feb9ef9216a4	/etc/keyfiles/Gamingkeyfile	luks
+
+# VM
+VM	UUID=5395fc9f-9f04-4978-a252-c188ca8e00f0	/etc/keyfiles/VMkeyfile	luks
+
+# HDD
+HDD	UUID=ad6c8e97-557b-43f5-9094-d3784f3e9bac	/etc/keyfiles/HDDkeyfile	luks
+
+# HWW
+HWW	UUID=81113447-bcb0-46e8-bdc2-1004d9d82f09	/etc/keyfiles/HWWkeyfile	luks

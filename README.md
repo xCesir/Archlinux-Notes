@@ -12,9 +12,8 @@ Aufgrund von Lizenz Konflikten.
 - Kitty-Terminal inline char für [Halftone](https://en.wikipedia.org/wiki/Halftone)
 - weniger Denglish
 - Flatseal, Protonup-QT, Protontricks
-- nvimkickstarter aktualisieren
-- hypr env
 - manuell install
+- fstab / crypttab
 
 ## Update
 
