@@ -5,9 +5,6 @@ Bei diesem Repo handelt es sich ausschließlich um eine persönliche Zusammenfas
 Das Repo ausschließlich dafür geteilt, um meine gesammelten Informationen auch zu nutzen.
 Das Beitragen zum Repo ist generell möglich.
 
-Warum ist das Repo privat?
-Aufgrund von Lizenz Konflikten.
-
 ## to do:
 - Kitty-Terminal inline char für [Halftone](https://en.wikipedia.org/wiki/Halftone)
 - weniger Denglish
