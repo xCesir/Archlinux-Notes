@@ -324,3 +324,9 @@ mpv like image viewer
 ```
 sudo pacman -S imv
 ```
+
+## goverlay
+A GUI to help manage Vulkan/OpenGL overlays
+```
+sudo pacman -S goverlay
+```
