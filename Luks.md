@@ -59,3 +59,36 @@ This is very important to save. If the header is damaged all data is lost withou
 ````sudo cat /etc/crypttab````
 
 If you need more help you can type ````man cryptsetup````.
+
+## kbdrate to fast to enter password
+
+`nvim /usr/lib/initcpio/hooks/kbdrate`
+```
+#!/usr/bin/ash
+# SPDX-License-Identifier: GPL-2.0-only
+
+run_hook() {
+    msg -n ':: Setting kbdrate...'
+    ./kbdrate -d 1000 -r 2
+}
+```
+`nvim /usr/lib/initcpio/install/kbdrate`
+```
+#!/usr/bin/env bash
+# SPDX-License-Identifier: GPL-2.0-only
+
+build() {
+    add_binary /usr/bin/kbdrate /kbdrate
+    add_runscript
+}
+
+help() {
+    cat <<HELPEOF
+This hook adds kbdrate to the initramfs.
+HELPEOF
+}
+```
+`nvim /etc/mkinitcpio.conf` add `kbdrate` before `encrypt` or other encryption hooks
+
+`HOOKS=(... kbdrate encrypt ...)`
+
