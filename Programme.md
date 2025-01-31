@@ -60,6 +60,9 @@ You can get this system information tool to output everything it can gather by u
 fastfetch -c all.jsonc
 ```
 
+## hyfetch
+Neofetch/fastfetch with LGBTQ+ pride flags!
+
 ## firejail
 
 ### setup
