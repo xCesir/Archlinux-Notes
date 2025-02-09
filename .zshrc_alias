@@ -37,3 +37,4 @@ alias nvimpluginsupdate='nvim --headless "+Lazy! sync" +qa; nvim --headless "+Ma
 alias fzf-preview="fzf --preview 'bat --color=always {}'"
 alias scrcp="scrcpy >> /dev/null 2> /dev/null &disown"
 alias ob="VK_DRIVER_FILES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json:/usr/share/vulkan/icd.d/intel_icd.i686.json com.obsproject.Studio >> /dev/null 2> /dev/null &disown"
+alias git-squash-all='git reset $(git commit-tree "HEAD^{tree}" -m "initial commit")'
