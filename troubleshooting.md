@@ -66,3 +66,12 @@ yay -S mkinitcpio-firmware
 ```
 sudo pacman -S fuse2
 ```
+
+## luks Umlaute funktionieren nicht
+```
+nvim /etc/vconsole.conf 
+```
+```
+KEYMAP=de-latin1
+XKBLAYOUT=de-latin1
+```
