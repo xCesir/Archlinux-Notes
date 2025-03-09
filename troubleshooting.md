@@ -1,7 +1,8 @@
 # troubleshooting
 
 ## Schwarz Box um Gnome 47 Apps mit amdvlk driver
-`GSK_RENDERER=ngl` in `/etc/environment`
+`GSK_RENDERER=ngl` and `VK_DRIVER_FILES=/usr/share/vulkan/icd.d/radeon_icd.i686.json:/usr/share/vulkan/icd.d/radeon_icd.x86_64.json` in `/etc/environment`
+
 
 ## Kein Internet virtuelle Maschinen
 Mit dem letzten Update von UFW wird der Internet Verkehr von libvirt, welcher für virtuelle Maschinen notwendig ist, gestört.
