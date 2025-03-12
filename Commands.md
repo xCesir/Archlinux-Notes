@@ -30,3 +30,7 @@ load module and redirect 2 dummy device
 modprobe v4l2loopback exclusive_caps=1
 ffmpeg -f v4l2 -input_format mjpeg -i /dev/video0 -vf "hflip,format=yuyv422" -f v4l2 /dev/video2
 ```
+oder
+```
+ffmpeg -f v4l2 -input_format mjpeg -framerate 30 -video_size 1920x1080 -i /dev/video0 -vf "format=yuyv422" -f v4l2 /dev/video2
+```
