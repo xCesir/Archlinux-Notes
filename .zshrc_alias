@@ -39,3 +39,19 @@ alias scrcp="scrcpy >> /dev/null 2> /dev/null &disown"
 alias ob="VK_DRIVER_FILES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json:/usr/share/vulkan/icd.d/intel_icd.i686.json com.obsproject.Studio >> /dev/null 2> /dev/null &disown"
 alias git-squash-all='git reset $(git commit-tree "HEAD^{tree}" -m "initial commit")'
 alias vcam='sudo modprobe v4l2loopback exclusive_caps=1; VK_DRIVER_FILES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json:/usr/share/vulkan/icd.d/intel_icd.i686.json ffmpeg -f v4l2 -input_format mjpeg -framerate 30 -video_size 1920x1080 -i /dev/video0 -vf "format=yuyv422" -f v4l2 /dev/video2'
+alias uwu="/usr/bin/sudo"
+alias uwU="/usr/bin/sudo"
+alias uWu="/usr/bin/sudo"
+alias uWU="/usr/bin/sudo"
+alias Uwu="/usr/bin/sudo"
+# alias UwU="/usr/bin/sudo"
+alias UWu="/usr/bin/sudo"
+alias UWU="/usr/bin/sudo"
+UwU() {
+    if [[ $1 =~ "[sS][eE][nN][pP][aA][iI]" && $2 =~ "[fF][uU][cC][kK]" && $3 =~ "[mM][eE]" ]]
+    then updaq; fi
+}
+function I(){
+    if [[ $@ == "will be back" ]];
+    then reboot; fi
+}
