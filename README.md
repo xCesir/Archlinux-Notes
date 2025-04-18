@@ -115,4 +115,6 @@ archinstall
 
 [Hardware](./Hardware.md)
 
+## VR
+[Linux VR](./Linux-VR.md)
 

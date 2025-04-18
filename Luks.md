@@ -1,8 +1,10 @@
+# Linux Unified Key Setup
 ## create random
 ````shell
 dd bs=512 count=4 if=/dev/random of="./mykeyfile" iflag=fullblock
 ````
-[Reddit Post](https://askubuntu.com/questions/1319688/luks-how-can-i-add-more-password-slots-or-remove-change-a-password)
+## LUKS in kürze
+Quelle: [Reddit Post](https://askubuntu.com/questions/1319688/luks-how-can-i-add-more-password-slots-or-remove-change-a-password)
 
 I assume that the partition is ````/dev/sda3````
 
@@ -60,6 +62,17 @@ This is very important to save. If the header is damaged all data is lost withou
 
 If you need more help you can type ````man cryptsetup````.
 
+# troubleshooting
+
+## luks Umlaute funktionieren nicht
+```
+nvim /etc/vconsole.conf 
+```
+```
+KEYMAP=de-latin1
+XKBLAYOUT=de-latin1
+```
+
 ## kbdrate to fast to enter password
 
 `nvim /usr/lib/initcpio/hooks/kbdrate`
@@ -91,4 +104,3 @@ HELPEOF
 `nvim /etc/mkinitcpio.conf` add `kbdrate` before `encrypt` or other encryption hooks
 
 `HOOKS=(... kbdrate encrypt ...)`
-
