@@ -47,3 +47,8 @@ ffmpeg -f v4l2 -input_format mjpeg -framerate 30 -video_size 1920x1080 -i /dev/v
 ```
 find . -name '*.png' | xargs -n 1 bash -c 'magick $0 "${0%.*}.avif"'
 ```
+
+## ## find image type in dir and rm
+```
+find . -name '*.png' | xargs -n 1 bash -c 'rm $0'
+```
