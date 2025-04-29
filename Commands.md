@@ -42,3 +42,8 @@ oder
 ```
 ffmpeg -f v4l2 -input_format mjpeg -framerate 30 -video_size 1920x1080 -i /dev/video0 -pix_fmt yuyv422 -f v4l2 /dev/video2
 ```
+
+## find image type in dir and convert
+```
+find . -name '*.png' | xargs -n 1 bash -c 'magick $0 "${0%.*}.avif"'
+```
