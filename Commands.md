@@ -14,6 +14,10 @@ localectl list-keymaps
 kbdrate -d 300 -r 30
 loadkeys de-latin1
 ````
+## Merge folder
+```bash
+rsync -avh source destination
+```
 ## Konsole print Battery Status
 ````
 upower -d

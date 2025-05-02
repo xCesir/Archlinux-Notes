@@ -195,33 +195,6 @@ Supplies technical and tag information about media files
 sudo pacman -S mediainfo mediainfo-gui
 ```
 
-## [clamAV](https://wiki.archlinux.de/title/ClamAV)
-
-```
-sudo pacman -S clamav
-sudo systemctl daemon-reload
-sudo systemctl enable clamav-freshclam.service
-sudo systemctl start clamav-freshclam.service
-sudo freshclam
-sudo systemctl enable clamav-daemon.service
-sudo systemctl start clamav-daemon.service
-curl https://secure.eicar.org/eicar.com.txt | clamscan -                                                                                                                                                   
-```
-Wenn man den Service nicht permanent im Hintergrund laufen haben möchte:
-```
-sudo systemctl start clamav-freshclam.service; sudo systemctl start --now clamav-daemon.service;sudo freshclam; find /home/archie -type f -print0 | xargs -0 -P $(nproc) clamscan; sudo systemctl stop --now clamav-daemon.socket; sudo systemctl stop --now clamav-daemon.service; sudo systemctl stop clamav-freshclam.service
-```
-
-### exmaple scan
-```
-find /home/archie -type f -print0 | xargs -0 -P $(nproc) clamscan
-```
-
-### refresh Database
-```
-freshclam
-```
-
 ## [Kitty Terminal](https://sw.kovidgoyal.net/kitty/)
 
 ```
@@ -333,3 +306,66 @@ A GUI to help manage Vulkan/OpenGL overlays
 ```
 sudo pacman -S goverlay
 ```
+## OBS
+### aur
+```bash
+yay -S obs-studio-git
+```
+### flatpak
+```bash
+flatpak install com.obsproject.Studio
+```
+
+## Freedesktop Platform
+Stellt viele Pakete für andere Flathub Pakete Bereit wie z.B. MangoHUD oder streaming Encoder für OBS
+```bash
+flatpak search org.freedesktop.Platform
+```
+
+## [Identity](https://flathub.org/apps/org.gnome.gitlab.YaLTeR.Identity)
+Identity ist ein Programm zum vergleichen von Photos und Videos.
+```bash
+flatpak install org.gnome.gitlab.YaLTeR.Identity
+```
+
+
+## Switcheroo
+Convert between different image filetypes and resize them easily. 
+```bash
+flatpak install io.gitlab.adhami3310.Converter
+```
+
+## Speech Note
+[Github](https://github.com/mkiol/dsnote)
+
+### Gnome Extension Manager
+```bash
+flatpak install com.mattjakeman.ExtensionManager
+```
+
+## Master PDF Editor (flatpak)
+Ein PDF Editor (selbstrechnender Charakterbogen für DSA5 [Das schwarze Auge])
+
+## Decibels (flatpak)
+Ein Audio Player
+
+## Parabolic (flatpak)
+Download web video and audio
+
+## Flatseal
+
+## Protontrick
+
+## Protonup-qt
+
+## ProtonPlus
+
+## coolercontrol
+
+## mission-center
+
+## NoiseTorch
+
+## heroic-games-launcher-bin
+
+## r2modmanPlus
