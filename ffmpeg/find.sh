@@ -1,1 +1,0 @@
-find ./ -type f -not -name '*_av1.mkv' -not -name '*_av1_2.mkv' -not -name '*.avif' -not -name '*.gif' -not -name '*.md' -not -name '*.mp3' -not -name '*.opus' -not -name '*.json' -not -path "./Instaloader/*" -not -path './special/*' -not -path './TiktokDownloads/*' -not -path './Temp/*'
