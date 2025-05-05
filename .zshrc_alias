@@ -10,8 +10,8 @@ alias jailfox="firejail --private --dns=9.9.9.9 --dns=1.1.1.1 firefox -no-remote
 alias jailtop="firejail --apparmor --noprofile vesktop >> /dev/null 2> /dev/null& disown"
 alias jailvaldi="firejail --apparmor vivaldi >> /dev/null 2> /dev/null& disown"
 alias fzf-preview="fzf --preview 'bat --color=always {}'"
-alias up="sudo snap refresh;flatpak update;nvimpluginsupdate;yay -Syu;fullomzupdate"
-alias updaq="sudo snap refresh;flatpak update -y;nvimpluginsupdate;yay -Syu --noconfirm --answerclean All --answerdiff None --answerupgrade Repo --answeredit None;sudo sbctl verify;fullomzupdate"
+alias up="sudo snap refresh;flatpak update;nvimpluginsupdate;yay -Syu --devel;fullomzupdate"
+alias updaq="sudo snap refresh;flatpak update -y;nvimpluginsupdate;yay -Syu --devel --noconfirm --answerclean All --answerdiff None --answerupgrade Repo --answeredit None;sudo sbctl verify;fullomzupdate"
 alias fullomzupdate="
 pushd ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/
 git pull
@@ -38,7 +38,7 @@ alias fzf-preview="fzf --preview 'bat --color=always {}'"
 alias scrcp="scrcpy >> /dev/null 2> /dev/null &disown"
 alias ob="VK_DRIVER_FILES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json:/usr/share/vulkan/icd.d/intel_icd.i686.json com.obsproject.Studio >> /dev/null 2> /dev/null &disown"
 alias git-squash-all='git reset $(git commit-tree "HEAD^{tree}" -m "initial commit")'
-alias vcam='sudo modprobe v4l2loopback exclusive_caps=1; VK_DRIVER_FILES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json:/usr/share/vulkan/icd.d/intel_icd.i686.json ffmpeg -f v4l2 -input_format mjpeg -framerate 30 -video_size 1920x1080 -i /dev/video0 -vf "format=yuyv422" -f v4l2 /dev/video2'
+alias vcam='sudo modprobe v4l2loopback devices=1 exclusive_caps=1 video_nr=2 card_label="fake-cam"; VK_DRIVER_FILES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json:/usr/share/vulkan/icd.d/intel_icd.i686.json ffmpeg -f v4l2 -input_format mjpeg -framerate 30 -video_size 1280x720 -i /dev/video0 -vf "format=yuyv422" -f v4l2 /dev/video2'
 alias uwu="/usr/bin/sudo"
 alias uwU="/usr/bin/sudo"
 alias uWu="/usr/bin/sudo"
