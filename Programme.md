@@ -369,3 +369,5 @@ Download web video and audio
 ## heroic-games-launcher-bin
 
 ## r2modmanPlus
+
+## gpt4all-chat
