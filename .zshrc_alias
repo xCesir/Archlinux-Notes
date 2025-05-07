@@ -12,6 +12,7 @@ alias jailvaldi="firejail --apparmor vivaldi >> /dev/null 2> /dev/null& disown"
 alias fzf-preview="fzf --preview 'bat --color=always {}'"
 alias up="sudo snap refresh;flatpak update;nvimpluginsupdate;yay -Syu --devel;fullomzupdate"
 alias updaq="sudo snap refresh;flatpak update -y;nvimpluginsupdate;yay -Syu --devel --noconfirm --answerclean All --answerdiff None --answerupgrade Repo --answeredit None;sudo sbctl verify;fullomzupdate"
+alias updaqnd="sudo snap refresh;flatpak update -y;nvimpluginsupdate;yay -Syu --noconfirm --answerclean All --answerdiff None --answerupgrade Repo --answeredit None;sudo sbctl verify;fullomzupdate"
 alias fullomzupdate="
 pushd ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/
 git pull
@@ -47,9 +48,16 @@ alias Uwu="/usr/bin/sudo"
 # alias UwU="/usr/bin/sudo"
 alias UWu="/usr/bin/sudo"
 alias UWU="/usr/bin/sudo"
+alias please="/usr/bin/sudo"
 UwU() {
-    if [[ $1 =~ "[sS][eE][nN][pP][aA][iI]" && $2 =~ "[fF][uU][cC][kK]" && $3 =~ "[mM][eE]" ]]
-    then updaq; fi
+    if [[ $@ =~ "([sS][eE][nN][pP][aA][iI] [fF][uU][cC][kK] [mM][eE])$" ]]
+    then updaq;
+    elif [[ $@ =~ "([sS][eE][nN][pP][aA][iI] [fF][uU][cC][kK] [mM][eE]) [sS][oO][fF][tT]$" ]]
+    then updaqnd;
+    else
+        sudo $@;
+    fi
+
 }
 function I(){
     if [[ $@ == "will be back" ]];
