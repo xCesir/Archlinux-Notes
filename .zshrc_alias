@@ -52,7 +52,7 @@ alias please="/usr/bin/sudo"
 UwU() {
     if [[ $@ =~ "([sS][eE][nN][pP][aA][iI] [fF][uU][cC][kK] [mM][eE])$" ]]
     then updaq;
-    elif [[ $@ =~ "([fF][uU][cC][kK] [mM][eE]) [sS][oO][fF][tT] [dD][aA][dD][dD][yY]$" ]]
+    elif [[ $@ =~ "([fF][uU][cC][kK] [mM][eE]) [sS][oO][fF][tT] [dD][aA][dD][dD][yY]$)" ]]
     then updaqnd;
     else
         sudo $@;
@@ -60,6 +60,12 @@ UwU() {
 
 }
 function I(){
-    if [[ $@ == "will be back" ]];
-    then reboot; fi
+    if [[ $@ == "(will be back)$" ]]
+    then reboot;
+    fi
+}
+function you(){
+    if [[ $@ =~ "(died)$" ]];
+    then shutdown -P +0;
+    fi
 }
