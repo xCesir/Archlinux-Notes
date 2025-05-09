@@ -371,3 +371,5 @@ Download web video and audio
 ## r2modmanPlus
 
 ## gpt4all-chat
+
+## bottles
