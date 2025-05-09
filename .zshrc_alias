@@ -52,10 +52,10 @@ alias please="/usr/bin/sudo"
 UwU() {
     if [[ $@ =~ "([sS][eE][nN][pP][aA][iI] [fF][uU][cC][kK] [mM][eE])$" ]]
     then updaq;
-    elif [[ $@ =~ "([fF][uU][cC][kK] [mM][eE]) [sS][oO][fF][tT] [dD][aA][dD][dD][yY]$)" ]]
-    then updaqnd;
+    elif [[ $@ =~ "([fF][uU][cC][kK] [mM][eE] [sS][oO][fF][tT] [dD][aA][dD][dD][yY])$" ]]
+    then updaqnd;echo "check";
     else
-        sudo $@;
+        sudo $@;echo "hi";
     fi
 
 }
