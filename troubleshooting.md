@@ -1,6 +1,6 @@
 # troubleshooting
 
-## coolercontrol not showing up properly
+## coolercontrol-bin not showing up properly
 https://gitlab.com/coolercontrol/coolercontrol/-/issues/405
 ```
 env __GLX_VENDOR_LIBRARY_NAME=mesa __EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/50_mesa.json MESA_LOADER_DRIVER_OVERRIDE=ngl GALLIUM_DRIVER=ngl coolercontrol
