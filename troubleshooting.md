@@ -5,6 +5,29 @@ https://gitlab.com/coolercontrol/coolercontrol/-/issues/405
 ```
 env __GLX_VENDOR_LIBRARY_NAME=mesa __EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/50_mesa.json MESA_LOADER_DRIVER_OVERRIDE=ngl GALLIUM_DRIVER=ngl coolercontrol
 ```
+### autostart
+`~/.config/autostart/coolercontrol.desktop`
+```bash
+[Desktop Entry]
+Comment[en_US]=
+Comment=
+Exec=env __GLX_VENDOR_LIBRARY_NAME=mesa __EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/50_mesa.json MESA_LOADER_DRIVER_OVERRIDE=ngl GALLIUM_DRIVER=ngl /bin/coolercontrol
+GenericName[en_US]=coolercontrol
+GenericName=coolercontrol
+Icon=coolercontrol
+MimeType=
+Name[en_US]=coolercontrol
+Name=coolercontrol
+Path=
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application
+X-GNOME-Autostart-Delay=10
+X-GNOME-Autostart-enabled=true
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+```
 
 ## Schwarz Box um Gnome 47 Apps mit amdvlk driver
 `GSK_RENDERER=ngl` and `VK_DRIVER_FILES=/usr/share/vulkan/icd.d/radeon_icd.i686.json:/usr/share/vulkan/icd.d/radeon_icd.x86_64.json` in `/etc/environment`
