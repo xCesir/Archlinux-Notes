@@ -360,7 +360,7 @@ Download web video and audio
 
 ## ProtonPlus
 
-## coolercontrol
+## cpupower
 
 ## mission-center
 
