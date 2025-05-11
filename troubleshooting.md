@@ -28,6 +28,7 @@ X-GNOME-Autostart-enabled=true
 X-KDE-SubstituteUID=false
 X-KDE-Username=
 ```
+alternativ von coolercontrol-bin auf coolercontrol wechseln.
 
 ## Schwarz Box um Gnome 47 Apps mit amdvlk driver
 `GSK_RENDERER=ngl` and `VK_DRIVER_FILES=/usr/share/vulkan/icd.d/radeon_icd.i686.json:/usr/share/vulkan/icd.d/radeon_icd.x86_64.json` in `/etc/environment`
