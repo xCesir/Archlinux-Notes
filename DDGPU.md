@@ -60,13 +60,13 @@ oder
 #
 ANV_VIDEO_DECODE=1
 #LIBVA_DRIVER_NAME=radeonsi,i965
-#DISABLE_LAYER_AMD_SWITCHABLE_GRAPHICS_1=1
+DISABLE_LAYER_AMD_SWITCHABLE_GRAPHICS_1=1
 MESA_VK_DEVICE_SELECT=1002:744c
-#GSK_RENDERER=ngl
+GSK_RENDERER=ngl
 #VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd64.json:/usr/share/vulkan/icd.d/radeon_icd32.json
 AMD_VULKAN_ICD=RADV
 #VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/amd_icd64.json:/usr/share/vulkan/icd.d/amd_icd32.json
 #AMD_VULKAN_ICD=amdvlk
 #DRI_PRIME=pci-0000_10_00_0
-VK_DRIVER_FILES=/usr/share/vulkan/icd.d/radeon_icd.i686.json:/usr/share/vulkan/icd.d/radeon_icd.x86_64.json
+#VK_DRIVER_FILES=/usr/share/vulkan/icd.d/radeon_icd.i686.json:/usr/share/vulkan/icd.d/radeon_icd.x86_64.json
 ```
