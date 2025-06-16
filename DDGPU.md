@@ -2,10 +2,7 @@
 Wenn unter Linux mehrere dedizierte GPUs verwendet werden, kann es vorkommen, dass Wayland die falsche GPU als primäre GPU (`GPU0`) erkennt.\
 Um dies zu korrigieren, kann man folgendermaßen vorgehen:
 ## `/etc/environment`:
-to re-enable the ICD loader method below.
-```bash
-DISABLE_LAYER_AMD_SWITCHABLE_GRAPHICS_1=1 
-```
+
 ### set [Mesa device](https://wiki.archlinux.org/title/Vulkan#Switching_between_devices) (recommended)
 ```bash
 $ MESA_VK_DEVICE_SELECT=list vulkaninfo
@@ -19,27 +16,40 @@ selectable devices:
 ```bash
 MESA_VK_DEVICE_SELECT=1002:744c
 ```
-
-### RADV
-``` 
-VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd64.json:/usr/share/vulkan/icd.d/radeon_icd32.json
-```
-oder:
-```
-AMD_VULKAN_ICD=RADV
-```
-### amdvlk
-```
-VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/amd_icd64.json:/usr/share/vulkan/icd.d/amd_icd32.json # set amdvlk ICD Driver
-```
-oder
-```
-AMD_VULKAN_ICD=amdvlk # set amdvlk ICD Driver
-```
-### set GPU via PCI-Address
+### set GPU via PCI-Address (not recommended)
 ```
 DRI_PRIME=pci-0000_10_00_0
 ```
+
+# Set GPU AMDGPU driver
+## set ICD 
+### RADV
+```
+AMD_VULKAN_ICD=RADV
+```
+### AMDVLK
+```
+AMD_VULKAN_ICD=amdvlk # set amdvlk ICD Driver
+```
+
+## re-enable ICD loader
+to re-enable the ICD loader method below.
+```bash
+DISABLE_LAYER_AMD_SWITCHABLE_GRAPHICS_1=1 
+```
+## set VK_DRIVER_FILES
+### RADV
+``` 
+VK_DRIVER_FILES=/usr/share/vulkan/icd.d/radeon_icd64.json:/usr/share/vulkan/icd.d/radeon_icd32.json
+```
+oder:
+
+### amdvlk
+```
+VK_DRIVER_FILES=/usr/share/vulkan/icd.d/amd_icd64.json:/usr/share/vulkan/icd.d/amd_icd32.json # set amdvlk ICD Driver
+```
+oder
+
 
 ## my current version
 ```
@@ -49,6 +59,14 @@ DRI_PRIME=pci-0000_10_00_0
 # Syntax: simple "KEY=VAL" pairs on separate lines
 #
 ANV_VIDEO_DECODE=1
-DISABLE_LAYER_AMD_SWITCHABLE_GRAPHICS_1=1
+#LIBVA_DRIVER_NAME=radeonsi,i965
+#DISABLE_LAYER_AMD_SWITCHABLE_GRAPHICS_1=1
 MESA_VK_DEVICE_SELECT=1002:744c
+#GSK_RENDERER=ngl
+#VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd64.json:/usr/share/vulkan/icd.d/radeon_icd32.json
+AMD_VULKAN_ICD=RADV
+#VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/amd_icd64.json:/usr/share/vulkan/icd.d/amd_icd32.json
+#AMD_VULKAN_ICD=amdvlk
+#DRI_PRIME=pci-0000_10_00_0
+VK_DRIVER_FILES=/usr/share/vulkan/icd.d/radeon_icd.i686.json:/usr/share/vulkan/icd.d/radeon_icd.x86_64.json
 ```
