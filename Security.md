@@ -122,19 +122,7 @@ sudo freshclam
 then
 
 ```bash
-sudo systemctl enable --now clamav-freshclam.service
-```
-
-then
-
-```bash
-sudo systemctl enable --now clamav-clamonacc.service
-```
-
-then
-
-```bash
-sudo systemctl enable --now clamav-daemon.service
+sudo systemctl enable --now clamav-freshclam.service clamav-clamonacc.service clamav-daemon.service
 ```
 
 for testing see [testing clamAV](https://wiki.archlinux.org/title/ClamAV#Testing_the_software)
