@@ -2,7 +2,7 @@
 
 ## tilling Window Manager
 ```
-yay -S kwin-scripts-krohnkite-git
+yay -S kwin-scripts-krohnkite-git klassy
 ```
 
 ## use Toggle Overview on Super instead of Application Menu Widget (deprecated)
