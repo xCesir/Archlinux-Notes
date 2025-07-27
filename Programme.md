@@ -374,4 +374,31 @@ Download web video and audio
 
 ## bottles
 
-  ## [Overlayed](https://flathub.org/apps/dev.overlayed.Overlayed)
+## [Overlayed](https://flathub.org/apps/dev.overlayed.Overlayed)
+
+## systemd-oomd
+```bash
+sudo systemctl enable --now systemd-oomd.service
+```
+## bsod
+`sudo nvim /etc/systemd/system/bsod.service`
+```bash
+[Unit]
+Description=Display Boot-Time Emergency Messages In Full Screen
+Documentation=man:systemd-bsod.service(8)
+ConditionVirtualization=no
+DefaultDependencies=no
+After=systemd-battery-check.service
+Before=shutdown.target
+Conflicts=shutdown.target
+
+[Service]
+RemainAfterExit=yes
+ExecStart=/usr/lib/systemd/systemd-bsod --continuous
+
+[Install]
+WantedBy=multi-user.target
+```
+```bash
+sudo systemctl enable --now bsod.service
+```
