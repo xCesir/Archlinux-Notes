@@ -10,9 +10,9 @@ alias jailDfox="firejail --private=/home/sidney/Downloads --dns=9.9.9.9 --dns=1.
 alias jailtop="firejail --apparmor --noprofile vesktop >> /dev/null 2> /dev/null& disown"
 alias jailvaldi="firejail --apparmor vivaldi >> /dev/null 2> /dev/null& disown"
 alias fzf-preview="fzf --preview 'bat --color=always {}'"
-alias up="sudo-rs snap refresh;flatpak update;nvimpluginsupdate;yay -Syu --devel;fullomzupdate"
-alias updaq="sudo-rs snap refresh;flatpak update -y;kickstartnvimup;nvimpluginsupdate;yay -Syu --devel --noconfirm --answerclean All --answerdiff None --answerupgrade Repo --answeredit None;sudo-rs sbctl list-files;fullomzupdate"
-alias updaqnd="sudo-rs snap refresh;flatpak update -y;kickstartnvimup;nvimpluginsupdate;yay -Syu --noconfirm --answerclean All --answerdiff None --answerupgrade Repo --answeredit None;sudo-rs sbctl list-files;fullomzupdate"
+alias up="su root -c up;sudo-rs snap refresh;flatpak update;nvimpluginsupdate;yay -Syu --devel;fullomzupdate"
+alias updaq="su root -c up;sudo-rs snap refresh;flatpak update -y;kickstartnvimup;nvimpluginsupdate;yay -Syu --devel --noconfirm --answerclean All --answerdiff None --answerupgrade Repo --answeredit None;sudo-rs sbctl list-files;fullomzupdate"
+alias updaqnd="su root -c up;sudo-rs snap refresh;flatpak update -y;kickstartnvimup;nvimpluginsupdate;yay -Syu --noconfirm --answerclean All --answerdiff None --answerupgrade Repo --answeredit None;sudo-rs sbctl list-files;fullomzupdate"
 alias kickstartnvimup="
 pushd ~/.config/nvim/
 curl -LJO https://raw.githubusercontent.com/nvim-lua/kickstart.nvim/refs/heads/master/init.lua
