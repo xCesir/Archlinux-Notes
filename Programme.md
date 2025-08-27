@@ -374,6 +374,8 @@ Download web video and audio
 
 ## bottles
 
+## cpu-x
+
 ## [Overlayed](https://flathub.org/apps/dev.overlayed.Overlayed)
 
 ## systemd-oomd
