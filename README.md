@@ -37,6 +37,9 @@ archinstall
  - dm-crypt (optional)
  - lvm (optional)
 
+## UEFI-BIOS
+[UEFI-BIOS](./UEFI-BiOS.md)
+
 ## troubleshooting
 
 [troubleshooting](./troubleshooting.md)
