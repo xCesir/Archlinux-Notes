@@ -81,7 +81,7 @@ XKBLAYOUT=de-latin1
 # SPDX-License-Identifier: GPL-2.0-only
 
 run_hook() {
-    msg -n ':: Setting kbdrate...'
+    msg ':: Setting kbdrate...'
     ./kbdrate -d 1000 -r 2
 }
 ```
