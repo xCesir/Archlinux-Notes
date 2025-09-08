@@ -5,6 +5,12 @@
             "top": 2
         }
     },
+    "display": {
+	"color":{
+			"keys": "magenta",
+			"title": "magenta"
+		}
+	},
     "modules": [
         "title",
         "separator",
