@@ -391,6 +391,8 @@ sudo pacman -S vivaldi vivaldi-ffmpeg-codecs
 
 ## thunderbird
 
+## [PINCE](https://github.com/korcankaraokcu/PINCE)
+
 ## systemd-oomd
 ```bash
 sudo systemctl enable --now systemd-oomd.service
