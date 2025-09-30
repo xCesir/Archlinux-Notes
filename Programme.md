@@ -378,6 +378,19 @@ Download web video and audio
 
 ## [Overlayed](https://flathub.org/apps/dev.overlayed.Overlayed)
 
+## Steam
+
+## Lutris
+
+## vivaldi
+```bash
+sudo pacman -S vivaldi vivaldi-ffmpeg-codecs
+```
+
+## chromium
+
+## thunderbird
+
 ## systemd-oomd
 ```bash
 sudo systemctl enable --now systemd-oomd.service
