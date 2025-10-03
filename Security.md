@@ -128,8 +128,25 @@ sudo systemctl enable --now clamav-freshclam.service clamav-clamonacc.service cl
 for testing see [testing clamAV](https://wiki.archlinux.org/title/ClamAV#Testing_the_software)
 
 ## [AppArmor](https://wiki.archlinux.org/title/AppArmor)
+```bash
+yay -S python-notify2 python-psutil apparmor.d-git
+```
 
+`lsm=landlock,lockdown,yama,integrity,apparmor,bpf audit=1 audit_backlog_limit=512` zu `/etc/kernel/cmdline` hinzufügen und `sudo mkinitcpio -P`, `sudo systemctl enable apparmor.service` dann neustarten. Check `aa-enabled` sollte `Yes` zurückgeben
 
+```bash
+~/.config/autostart/apparmor-notify.desktop
+```
+```bash
+[Desktop Entry]
+Type=Application
+Name=AppArmor Notify
+Comment=Receive on screen notifications of AppArmor denials
+TryExec=aa-notify
+Exec=aa-notify -p -s 1 -w 60 -f /var/log/audit/audit.log
+StartupNotify=false
+NoDisplay=true
+```
 
 
 
