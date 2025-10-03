@@ -127,6 +127,7 @@ sudo systemctl enable --now clamav-freshclam.service clamav-clamonacc.service cl
 
 for testing see [testing clamAV](https://wiki.archlinux.org/title/ClamAV#Testing_the_software)
 
+## [AppArmor](https://wiki.archlinux.org/title/AppArmor)
 
 
 
