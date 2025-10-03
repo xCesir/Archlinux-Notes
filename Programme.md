@@ -346,6 +346,10 @@ flatpak install com.mattjakeman.ExtensionManager
 ## Master PDF Editor (flatpak)
 Ein PDF Editor (selbstrechnender Charakterbogen für DSA5 [Das schwarze Auge])
 
+## [Stirling-Tools](https://github.com/Stirling-Tools/Stirling-PDF/tree/main) (PDF Tool)
+
+## [PDFtk](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)
+
 ## Decibels (flatpak)
 Ein Audio Player
 
