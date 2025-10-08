@@ -11,9 +11,40 @@ alias jailDfox="firejail --noprofile --private=/home/sidney/Downloads --dns=9.9.
 alias jailtop="firejail --apparmor --noprofile vesktop >> /dev/null 2> /dev/null& disown"
 alias jailvaldi="firejail --apparmor vivaldi >> /dev/null 2> /dev/null& disown"
 alias fzf-preview="fzf --preview 'bat --color=always {}'"
-alias up="su root -c up;sudo-rs snap refresh;flatpak update;nvimpluginsupdate;yay -Syu --devel;fullomzupdate"
-alias updaq="su root -c up;sudo-rs snap refresh;flatpak update -y;kickstartnvimup;nvimpluginsupdate;yay -Syu --devel --noconfirm --answerclean All --answerdiff None --answerupgrade Repo --answeredit None;sudo-rs sbctl list-files;fullomzupdate"
-alias updaqnd="su root -c up;sudo-rs snap refresh;flatpak update -y;kickstartnvimup;nvimpluginsupdate;yay -Syu --noconfirm --answerclean All --answerdiff None --answerupgrade Repo --answeredit None;sudo-rs sbctl list-files;fullomzupdate"
+alias up="
+toilet --font pagga --termwidth 'ROOT UPDATE NVIMPLUGIN'
+su root -c up;
+toilet --font pagga --termwidth 'USER UPDATE NVIMPLUGIN'
+kickstartnvimup;nvimpluginsupdate;
+toilet --font pagga --termwidth 'USER UPDATE SNAP'
+sudo snap refresh;
+toilet --font pagga --termwidth 'USER UPDATE FLATPAK'
+flatpak update;
+toilet --font pagga --termwidth 'USER UPDATE YAY'
+yay -Syu --devel;
+toilet --font pagga --termwidth 'USER SBCTL STATUS'
+sudo sbctl list-files;
+toilet --font pagga --termwidth 'USER HINWEIS AUF MANUELLE PAKETE'
+manuell;
+toilet --font pagga --termwidth 'USER UPDATE OMZ'
+fullomzupdate"
+alias upnq="
+toilet --font pagga --termwidth 'ROOT UPDATE NVIMPLUGIN'
+su root -c up;
+toilet --font pagga --termwidth 'USER UPDATE NVIMPLUGIN'
+kickstartnvimup;nvimpluginsupdate;
+toilet --font pagga --termwidth 'USER UPDATE SNAP'
+sudo snap refresh;
+toilet --font pagga --termwidth 'USER UPDATE FLATPAK'
+flatpak update -y;
+toilet --font pagga --termwidth 'USER UPDATE YAY'
+yay -Syu --devel --noconfirm --answerclean All --answerdiff None --answerupgrade Repo --answeredit None;
+toilet --font pagga --termwidth 'USER SBCTL STATUS'
+sudo sbctl list-files;
+toilet --font pagga --termwidth 'USER HINWEIS AUF MANUELLE PAKETE'
+manuell;
+toilet --font pagga --termwidth 'USER UPDATE OMZ'
+fullomzupdate"
 alias kickstartnvimup="
 pushd ~/.config/nvim/
 curl -LJO https://raw.githubusercontent.com/nvim-lua/kickstart.nvim/refs/heads/master/init.lua
@@ -38,8 +69,6 @@ popd
 omz update
 exec zsh
 "
-alias iicd="VK_DRIVER_FILES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json:/usr/share/vulkan/icd.d/intel_icd.i686.json"
-alias rnbg="> /dev/null 2> /dev/null&disown"
 alias nvimpluginsupdate='nvim --headless "+Lazy! sync" +qa; nvim --headless "+MasonToolsUpdateSync" +qa'
 alias fzf-preview="fzf --preview 'bat --color=always {}'"
 alias scrcp="scrcpy --audio-source=playback --turn-screen-off --stay-awake >> /dev/null 2> /dev/null &disown"
@@ -57,11 +86,11 @@ alias UWU="/usr/bin/sudo-rs"
 alias please="/usr/bin/sudo-rs"
 UwU() {
     if [[ $@ =~ "([sS][eE][nN][pP][aA][iI] [fF][uU][cC][kK] [mM][eE])$" ]]
-    then updaq;
+    then up;
     elif [[ $@ =~ "([fF][uU][cC][kK] [mM][eE] [sS][oO][fF][tT] [dD][aA][dD][dD][yY])$" ]]
-    then updaqnd;
+    then upnq;
     else
-        sudo-rs $@;
+        sudo $@;
     fi
 
 }
@@ -74,4 +103,15 @@ function you(){
     if [[ $@ =~ "(died)$" ]];
     then shutdown -P +0;
     fi
+}
+function gut(){
+    git $@ | sed -E 's/Git/Gut/g' | sed -E 's/GIT/GUT/g' | sed -E 's/[gG][iI][tT]/gut/g'
+}
+
+function gitgut(){
+    git $@ | sed -E 's/Git/GitGut/g' | sed -E 's/GIT/GITGUT/g' | sed -E 's/[gG][iI][tT]/gitgut/g'
+}
+
+function manuell(){
+	echo "Manuelle Pakete:"
 }
