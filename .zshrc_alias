@@ -105,11 +105,11 @@ function you(){
     fi
 }
 function gut(){
-    git $@ | sed -E 's/Git/Gut/g' | sed -E 's/GIT/GUT/g' | sed -E 's/[gG][iI][tT]/gut/g'
+    sed -E 's/\"/\\"/g' <<< $@ | sed -E 's/gut/git/g' | xargs git | sed -E 's/Git/Gut/g' | sed -E 's/GIT/GUT/g' | sed -E 's/[gG][iI][tT]/gut/g'
 }
 
 function gitgut(){
-    git $@ | sed -E 's/Git/GitGut/g' | sed -E 's/GIT/GITGUT/g' | sed -E 's/[gG][iI][tT]/gitgut/g'
+   sed -E 's/\"/\\"/g' <<< $@ | sed -E 's/gitgut/git/g' | xargs git | sed -E 's/Git/GitGut/g' | sed -E 's/GIT/GITGUT/g' | sed -E 's/[gG][iI][tT]/gitgut/g'
 }
 
 function manuell(){
