@@ -1,24 +1,25 @@
 # Programme
 
 ## GNUPG
-````
+```
 sudo pacman -S gnupg kleopatra
-````
-````
+```
+```
 echo "pinentry-program /usr/bin/pinentry-gnome3" > ~/.gnupg/gpg-agent.conf 
-````
+```
 oder ohne safe-screen
-````
+
+```
 echo "pinentry-program /usr/bin/pinentry-qt" > ~/.gnupg/gpg-agent.conf 
-````
-````
+```
+```
 gpg-connect-agent reloadagent /bye
-````
+```
 
 ## [Nextcloud](https://wiki.archlinux.org/title/Nextcloud#Synchronization)
-````
+```
 sudo pacman -S nextcloud-client
-````
+```
 
 Es gibt optionale Deps, die nicht automatisch installiert werden.
 Die Info zum Paket kann man mit `pacman -Qi nextcloud-client` auflisten. 
@@ -26,9 +27,9 @@ Die Info zum Paket kann man mit `pacman -Qi nextcloud-client` auflisten.
 Installieren kann man die optionalen Pakete mit `pacman -S --asdeps`
 
 Nextcloud arbeitet mit Tray-Icons, das kann unter Gnome nach installieren:
-````
+```
 sudo pacman -S gnome-shell-extension-appindicator
-````
+```
 oder kurz:
 ```
 sudo pacman -S nextcloud-client
@@ -67,82 +68,82 @@ Neofetch/fastfetch with LGBTQ+ pride flags!
 
 ### setup
 
-````
+```
 sudo pacman -S firejail firetools
-````
+```
 
 ### firefox example
 
-````
+```
 firejail --private --dns=9.9.9.9 --dns=1.1.1.1 firefox -no-remote
-````
+```
 oder
-````
+```
 firejail --private --dns=1.1.1.1 --dns=9.9.9.9 firefox -no-remote
-````
+```
 ## Tor
-````
+```
 sudo pacman -S torbrowser-launcher
-````
+```
 
 ### firejail example
-````
+```
 firejail --private=~/.local/share/torbrowser/ --dns=9.9.9.9 --dns=1.1.1.1 torbrowser-launcher
-````
+```
 
 ## image [thumbnails](https://wiki.archlinux.org/title/File_manager_functionality#Thumbnail_previews)
 
-````
+```
 sudo pacman -S tumbler
-````
+```
 
 ## LaTeX
 
-````
+```
 sudo pacman -S gnome-latex texlive-binextra texlive-langgerman dblatex
-````
+```
 ## tldr
 Ein tool mit Zusammenfassungen und Beispiele für Console Commands
 
-````
+```
 sudo pacman -S tldr
-````
+```
 
 ### Beispiel
-````
+```
 tldr sudo
-````
+```
 ## bat
 Cat clone with syntax highlighting and git integration
-````
+```
 sudo pacman -S bat bat-extras
-````
+```
 
 ## fzf
 Command-line fuzzy finder
-````
+```
 sudo pacman -S fzf
 echo "source /usr/share/fzf/key-bindings.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 echo "source /usr/share/fzf/completion.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 echo "eval $(fzf --zsh)" >> ${ZDOTDIR:-$HOME}/.zshrc
-````
+```
 ### fzf with bat preview
-````
+```
 fzf --preview 'bat --color=always {}'
-````
+```
 create alias `fzf-preview` when using [omz](./ohmyzsh.md)
-````
+```
 sed -ie s#alias\ ohmyzsh\=\"mate\ \~\/\.oh\-my\-zsh\"#alias\ ohmyzsh\=\"mate\ \~\/\.oh\-my\-zsh\"\\nalias\ fzf\-preview\=\"fzf\ \-\-preview\ \'bat\ \-\-color\=always\ \{\}\'\"# ~/.zshrc
-````
+```
 
 ### theFuck
 Magnificent app which corrects your previous console command
-````
+```
 sudo pacman -S thefuck
 thefuck
 fuck
 fuck
-````
+```
 
 ## GDM-Settings
 
@@ -396,6 +397,8 @@ sudo pacman -S vivaldi vivaldi-ffmpeg-codecs
 ## thunderbird
 
 ## [PINCE](https://github.com/korcankaraokcu/PINCE)
+
+## bleachbit
 
 ## systemd-oomd
 ```bash

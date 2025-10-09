@@ -71,9 +71,6 @@ archinstall
 ## Dual discrete GPU
 [Dual discrete GPU](./DDGPU.md)
 
-## steam
-[steam](./steam.md)
-
 ## Virt-Manager
 [Virt-Manager](./virt-manager.md)
 
